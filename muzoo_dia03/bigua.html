@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Bigua</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <div class="container-an">
+        <h2 class="animal-title">Biguá</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/bigua/bigua1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bigua/bigua2.webp" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bigua/bigua3.jpeg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bigua/bigua4.jpeg" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bigua/bigua5.jpg" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bigua/bigua6.jpg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Nannopterum brasilianum </i> <br>(Gmelin, 1789)</li>
+            <li><b>Nomes Populares:</b>  biguá-una, imbiuá, mergulhão, miuá, pata-d'água.</li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/bigua_som.m4a"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Suliformes</li>
+            <li><b>Família:</b> Phalacrocoracidae</li>
+            <li><b>Espécie:</b> N. brasilianum</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico</li>
+            <li><b>Alimentação do Biguá</b></li>
+            <li>O biguá é um especialista em capturar peixes e crustáceos. Ele mergulha a partir da superfície da água e persegue suas presas submerso.</li>
+            <li>Além de peixes, o biguá também pode se alimentar de girinos, sapos, rãs e insetos aquáticos.</li>
+            <div class="sub-imgs">
+                <img src="imgs/aves/bigua/bigua_aliment.jpg" alt="bigua_alimentando"><p>Biguá se Alimentando</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Coloração e Morfologia Básica</h4><br></li>
+            <li>Sua plumagem é totalmente preta com saco gular amarelo, que fica localizado na cervical, possuindo no longo pescoço. Possui cabeça pequena, bico cinzento amarelado longo e fino, sendo que a ponta da maxila termina em forma de gancho. Íris azuis, pernas e pés palmados pretos.</li>
+            <li><b>Dimensões</b></li>
+            <li>O biguá mede entre 58 e 73 centímetros de comprimento e pesa entre 1,2 a 1,4 kg.</li>
+            <li>Sua envergadura varia entre 100 e 102 centímetros.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento Geral e Estratégias de Sobrevivência</h4><br></li>
+            <li><b>Mergulhos</b></li>
+            <li>O biguá é um mergulhador habilidoso. Ele mergulha em busca de peixes e crustáceos, submerso, perseguindo sua presa.</li>
+            <li>Suas penas ficam completamente encharcadas para facilitar os mergulhos, eliminando o ar entre elas. Para secá-las, é comum vê-lo pousado com as asas abertas ao vento.</li>
+            <li><b>Comportamento de Voo</b></li>
+            <li>O biguá voa em grandes bandos, frequentemente em formação em “V”. À distância, pode se assemelhar a patos, mas é uma ave diferente.</li>
+            <li>A liderança do bando é compartilhada, com diferentes indivíduos assumindo a posição de líder durante o voo.</li>
+            <li><b>Estratégias de Defesa</b></li>
+            <li><b>Adaptação ao Mergulho:</b> Suas penas ficam completamente encharcadas para facilitar os mergulhos, eliminando o ar entre elas. Para secá-las, ele pousa com as asas abertas ao vento.</li>
+            <li><b>Comportamento Alerta:</b> Os predadores são uma ameaça constante. O biguá precisa estar sempre alerta para fugir ou lutar quando necessário.</li>
+            <li><b>Cooperação: </b>Alguns animais, como as formigas e as abelhas, trabalham juntos em colônias para sobreviver e prosperar. Embora o biguá não forme colônias, a cooperação entre indivíduos pode ser benéfica.</li>
+            <li><b>Estratégias de Sobrevivência</b></li>
+            <li>Adaptação ao Mergulho: Suas penas ficam completamente encharcadas para facilitar os mergulhos, eliminando o ar entre elas. Para secá-las, ele pousa com as asas abertas ao vento.</li>
+            <li>Comportamento Alerta: Os predadores são uma ameaça constante. O biguá precisa estar sempre alerta para fugir ou lutar quando necessário.</li>
+            <li>Cooperação: Alguns animais, como as formigas e as abelhas, trabalham juntos em colônias para sobreviver e prosperar. Embora o biguá não forme colônias, a cooperação entre indivíduos pode ser benéfica.</li>
+            <li><B>Principal predador da espécie:</B> O principal predador da espécie é o Jacaré-do-Papo-Amarelo.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência no Brasil</h4><br></li>
+            <li><b>Amazônia</b></li>
+            <li>A Amazônia é o maior bioma do mundo e também o maior do Brasil. Ela abrange cerca de 49,29% do território brasileiro, estando presente em nove estados: Acre, Amapá, Amazonas, Maranhão, Mato Grosso, Pará, Rondônia, Roraima e Tocantins. Além do Brasil, a Amazônia também se estende por mais nove países da América do Sul. <br> As florestas densas e abertas da Amazônia abrigam cerca de 40 mil espécies de plantas, 300 de mamíferos e 1,3 mil de aves.</li>
+            <li><b>Caatinga</b></li>
+            <li>A Caatinga é o único bioma exclusivo do Brasil. Corresponde a 11% do território nacional e está presente nos estados do Piauí, Ceará, Rio Grande do Norte, Paraíba, Pernambuco, Alagoas, Sergipe, Bahia e Minas Gerais. <br> Devido ao clima árido, a biodiversidade na Caatinga é restrita, mas ainda assim é um ambiente importante para várias espécies, incluindo o biguá.</li>
+            <li><b>Cerrado</b></li>
+            <li>O Cerrado ocorre principalmente no Planalto Central Brasileiro e ocupa aproximadamente 24% do território brasileiro. É reconhecido como a savana mais rica do mundo em biodiversidade. <br> Embora não seja mencionado especificamente no contexto do biguá, o Cerrado também é um habitat relevante para várias espécies de aves aquáticas, incluindo o biguá.</li>
+            <li><b>Mata Atlântica</b></li>
+            <li>A Mata Atlântica é um bioma costeiro que abrange partes do litoral brasileiro. Ela é conhecida por sua rica biodiversidade, mas grande parte de sua vegetação original foi desmatada. <br> O biguá pode ser encontrado em áreas costeiras e lagos dentro da Mata Atlântica.</li>
+            <li><b>Pampa</b></li>
+            <li>O Pampa é um bioma que ocorre principalmente no sul do Brasil, no estado do Rio Grande do Sul. É caracterizado por campos abertos e vegetação herbácea.
+            <br> Embora não seja mencionado especificamente no contexto do biguá, o Pampa também pode ser um habitat adequado para essas aves.</li>
+            <li><b>Pantanal</b></li>
+            <li>O Pantanal é uma das maiores áreas úmidas do mundo e está localizado nos estados de Mato Grosso e Mato Grosso do Sul. <br>  É um importante habitat para o biguá, que pode ser encontrado em rios, lagoas e áreas alagadas.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência nas Américas</b></li>
+                <img src="imgs/aves/bigua/mapa-ocorr-bigua.jpg" alt="mapa-bigua">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Reprodução</h4><br></li>
+            <li>Nidifica em colônias sobre árvores em matas alagadas e os ninhos são construídos com galhos e gravetos, o período de encubação é de cerca de 24 dias e os filhotes recebem cuidados parentais por aproximadamente 3 meses antes de se tornarem independentes.</li>
+            </ol>
+    </div>
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

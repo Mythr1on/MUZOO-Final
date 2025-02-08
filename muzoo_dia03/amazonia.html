@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bioma Amazônia</title>
+</head>
+<body class="mf-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="biomas_animais.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Amazônia</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/biomas/amazonia/amaz1.jpg" alt="suiriri1">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/amazonia/amaz2.jpg" alt="suiriri2">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/amazonia/amaz3.jpg" alt="suiriri3">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/amazonia/amaz4.webp" alt="suiriri4">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/amazonia/amaz5.jpeg" alt="suiriri5">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+
+
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O BIOMA</h4>
+        <ol class="infos-animais">
+            <li><h4>Área Total do Bioma</h4>Área de aproximadamente 7.413.827 km², que se estende por oito países: Bolívia, Brasil, Colômbia, Equador, Guiana, Peru e Venezuela e Suriname mais o território da Guiana Francesa.</li>
+            <div class="sub-imgs">
+                <img src="https://static.todamateria.com.br/upload/ma/pa/mapapaisesamazonicosptnc-cke.jpg" alt="area-amaz">
+            </div>
+            <li><h4>Clima</h4></li>
+            <li>É caracterizado como quente e úmido, com temperaturas médias anuais elevadas, com pouca variação, e bastante chuva por períodos de até 6 meses.</li>
+            <li><b>Temperatura média:</b> entre 24 e 26 °C;</li>
+            <li><b>Umidade:</b> em torno de 80%;</li>
+            <li><b>Índice pluviométrico:</b> entre 1.000 e 3.000 mm por ano.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Relevo</h4></li>
+            <li>A maior parte do relevo possui altitude entre 100 e 200 metros acima do nível do mar. Uma exceção é o Pico da Neblina, com 3014 metros de altitude, considerado o ponto mais alto do Brasil.</li>
+            <li>O relevo pode ser dividido da seguinte forma: <br>
+            <b>Planície de inundação:</b> região periodicamente alagada; <br>
+            <b>Planalto amazônico:</b> região com altura máxima de 200 metros; <br>
+            <b>Escudos cristalinos:</b> região com altura acima de 200 metros.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Hidrografia</h4></li>
+            <li>A amazônia possui a maior bacia hidrográfica do mundo, a bacia amazônia, com 6.100.000 km2 e mais de mil afluentes. A região detém cerca de 20% das reservas mundiais de água doce. </li> 
+            <li>Fazem parte da hidrografia amazônica os rios Amazonas, Araguaia, Nhamundá, Negro, Solimões, Tocantins, Trombetas, Xingu, Purus, Juruá, Japurá, Madeira, Tapajós e Branco.</li>
+            <li>O rio Amazonas, com 6.992,06 km, é considerado o maior rio do mundo em volume de água e em extensão. Ele deságua no Oceano Atlântico 175 milhões de litros d’água por segundo.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Vegetação</h4></li>
+            <li>O bioma Amazônia, que detém a maior floresta tropical do mundo, é formado em grande parte pela floresta ombrófila densa e a floresta ombrófila aberta.
+            A vegetação pode ser dividida em três grandes grupos: <br>
+            <b>Mata de várzea: </b> característica de altitudes baixas, onde as inundações são periódicas <br>
+            <div class="sub-imgs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Amazon_river.JPG/800px-Amazon_river.JPG" alt="img-varzea">
+                <p>Mata de Várzea</p>
+            </div>
+            <b>Mata de igapó:</b> característica de regiões alagadas, onde as inundações são permanentes. <br>
+            <div class="sub-imgs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Macacarecuia_%28Eschweilera_tenuifolia%29_localizada_na_por%C3%A7%C3%A3o_baixa_do_Igap%C3%B3_na_Amaz%C3%B4nia_Central.jpg" alt="img-igapo">
+                <p>Mata de Igapó</p>
+            </div>
+            <b>Mata de terra firme:</b> característica de altitudes elevadas, representa a maior parte da floresta amazônica. <br>
+            <div class="sub-imgs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FLONA_Tapaj%C3%B3s%2C%2C_Floresta_de_Terra_Firme.jpg/1280px-FLONA_Tapaj%C3%B3s%2C%2C_Floresta_de_Terra_Firme.jpg" alt="img-terra-firme">
+                <p>Mata de Terra Firme</p>
+            </div>
+            Exemplos de espécies nativas da flora amazônica são: seringueira, cupuaçu, tucumã, castanheira e sumaúma (o "gigante da Amazônia", que pode atingir 60 m de altura).</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Fauna</h4></li>
+            <li>A fauna amazônica é bastante diversificada, sendo responsável por cerca de 20% da diversidade animal do planeta, com espécies exclusivas do local e muitas em risco de extinção.</li>
+            <li>São exemplos de animais da Amazônia: onça-pintada, um dos maiores felinos do mundo, sucuri, uma das maiores cobras do mundo, pirarucu, um dos maiores peixes de água doce mundo, e mico-leão-dourado, um símbolo do Brasil e que hoje está entre as espécies ameaçadas de extinção.</li>
+            <div class="sub-imgs">
+                <img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2018/08/mico-le%C3%A3o-dourado-Foto-Khass2000.jpg?fit=1152%2C768&ssl=1" alt="mico-doura">
+                <p>Mico-Leão-Dourado</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://www.infoescola.com/wp-content/uploads/2010/06/pirarucu_757650421.jpg" alt="pirarucu">
+                <p>Pirarucu</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Visão Geral</h4></li>
+            <li>O bioma da Amazônia é uma vasta região de floresta tropical localizada principalmente no Norte do Brasil, estendendo-se também por partes de países vizinhos, como Peru, Colômbia e Venezuela. Considerado o maior bioma florestal tropical do mundo, a Amazônia abriga uma enorme diversidade de espécies de fauna e flora, muitas das quais ainda pouco conhecidas. Esse bioma é fundamental para a regulação climática global, pois atua como um importante sumidouro de carbono, além de ser essencial para o ciclo hidrológico, com suas bacias e rios que influenciam o regime de chuvas na América do Sul. A Amazônia também é lar de várias comunidades indígenas e povos tradicionais, que dependem diretamente de seus recursos naturais. No entanto, enfrenta ameaças sérias devido ao desmatamento, queimadas ilegais e a expansão agrícola, o que coloca em risco sua rica biodiversidade e os serviços ecológicos essenciais que proporciona.</li>
+            <div class="sub-imgs">
+                <img src="https://s7d1.scene7.com/is/image/wbcollab/hero_blog_-_marajo_-_marcelo_camargo_abr-136?qlt=90&fmt=webp&resMode=sharp2" alt="img-random-amaz">
+                <p>Imagem de Família na Amazônia</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4></li>
+            <li><b>Maior floresta tropical do mundo:</b> A Amazônia cobre cerca de 5,5 milhões de quilômetros quadrados, o que representa aproximadamente 40% da floresta tropical remanescente do planeta. <br>
+                <b>Biodiversidade impressionante:</b> A Amazônia abriga cerca de 10% de todas as espécies conhecidas no planeta, incluindo plantas, animais e microrganismos. Estima-se que existam até 400 bilhões de árvores na região. <br>
+                <b>Rios gigantescos:</b> O Rio Amazonas é o maior rio do mundo em volume de água e um dos mais longos, com cerca de 7.000 km de extensão. Sua bacia abrange mais de 6 milhões de quilômetros quadrados. <br>
+                <b>Amazônia e o oxigênio:</b> Apesar de ser conhecida como o "pulmão do mundo", a Amazônia não é a principal fonte de oxigênio do planeta, como muitas pessoas acreditam. As florestas tropicais, incluindo a Amazônia, produzem oxigênio, mas também consomem uma quantidade similar devido à respiração das plantas e à decomposição de matéria orgânica. <br>
+                <b>Amazônia subterrânea:</b> Sob o solo da floresta, existe um "mar de água subterrânea" chamado de aquífero Alter do Chão, que tem volumes de água potável capazes de abastecer toda a população mundial por séculos. <br>
+                <b>Fauna exótica:</b> Além dos famosos jaguares e onças, a Amazônia é lar de animais exóticos como o peixe-boi, o boto cor-de-rosa e a tarântula-goliath, a maior aranha do mundo. <br>
+                <b>Plantas com propriedades medicinais:</b> Cerca de 25% dos medicamentos utilizados no mundo têm origens em plantas da Amazônia, e muitas ainda não foram estudadas. <br>
+                <b>Ritmos e sons:</b> A Amazônia é uma verdadeira orquestra natural. O som das cigarras, macacos e aves faz parte de um dos ecossistemas mais sonoros do planeta. <br>
+                <b>Indígenas e biodiversidade:</b> Existem cerca de 350 etnias indígenas na Amazônia, muitas das quais têm um conhecimento profundo sobre a flora e fauna locais, utilizando plantas para curas e rituais, muitas vezes sem que a ciência moderna tenha descoberto suas propriedades. <br>
+                <b>A Amazônia e o clima global:</b> A Amazônia desempenha um papel crucial na regulação do clima global, influenciando a precipitação e o padrão de ventos em várias partes do mundo, além de ajudar a controlar os níveis de dióxido de carbono na atmosfera. <br>
+            </ol>
+    </div>
+
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

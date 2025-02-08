@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Seriema</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Seriema</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/seriema/seriema1.jpg" alt="suiriri1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/seriema/seriema2.webp" alt="suiriri2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/seriema/seriema3.webp" alt="suiriri3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/seriema/seriema4.jpg" alt="suiriri4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/seriema/seriema5.webp" alt="suiriri5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/seriema/seriema6.jpg" alt="suiriri6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Cariama cristata</i> <br>(Linnaeus, 1766)</li>
+            <li><b>Nomes Populares:</b> Conhecida também como sariema (Ceará) e seriema-de-pé-vermelho.</li>
+            <li>Atualmente a espécie não está em perigo de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/som_seriema.mp3"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Cariaformes</li>
+            <li><b>Família:</b> Cariamidae</li>
+            <li><b>Espécie:</b> C. cristata</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico.</li>
+            <li>Alimenta-se de gafanhotos e artrópodes, além de pequenos animais como cobras.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia</h4><br></li>
+            <li>A espécie pode atingir até 90 cm de comprimento na fase adulta e o seu peso pode chegar até 1,4 quilos. Possui uma plumagem cinza-amarelada, as patas e o bico vermelhos e o abdômen um pouco mais claro que o dorso.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento</h4><br></li>
+            <li>Ave diurna que vive de forma solitária, aos pares ou em pequenos bandos.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência</h4><br></li>
+            <li>Habitam cerrados, campos sujos e pastagens e há pouca ocorrência em áreas amplamente florestadas da Amazônia, por terem o hábito de caminhar no chão.</li>
+            <li>Distribuição: ocorre na Argentina, Paraguai, Uruguai e Bolívia – estando presente em todo o Brasil, exceto nas regiões amplamente florestadas da Amazônia.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência</b></li>
+                <img src="imgs/aves/seriema/mapa_seriema.png" alt="mapa-seriema">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Reprodução</h4><br></li>
+            <li>A seriema pode ter postura de dois a quatro ovos. O ninho é construído em árvores de pequeno porte (entre um e 5 metros), feito com gravetos e revestido de barro, folhas e estrume de gado, a fim de garantir a temperatura adequada para incubação – revezada pelo macho e pela fêmea – e dura em média duas semanas.</li>
+            <li></li>
+            </ol>
+
+            </div>
+               <!--FOOTER-->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>SOBRE</h4>
+                    <ul>
+                        <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMAÇÕES</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ensino</a></li>
+                        <li><a href="#">Extensão</a></li>
+                        <li><a href="#">Pesquisa e Pós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTATE-NOS</h4>
+                    <ul>
+                        <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                        <li><p>-Telefone: (37) 3431-4900</p></li>
+                        <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="index.js"></script>
+</body>
+</html>

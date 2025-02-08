@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bioma Caatinga</title>
+</head>
+<body class="mf-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="biomas_animais.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Caatinga</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/biomas/caatinga/caatinga1.jpeg" alt="suiriri1">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/caatinga/caatinga2.jpeg" alt="suiriri2">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/caatinga/caatinga3.jpeg" alt="suiriri3">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/caatinga/caatinga4.jpeg" alt="suiriri4">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/caatinga/caatinga5.jpg" alt="suiriri5">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O BIOMA</h4>
+        <ol class="infos-animais">
+            <li><h4>Área Total do Bioma</h4>Área de aproximadamente 850.000 km², que abrange os estados de Pernambuco, Paraíba, Ceará, Rio Grande do Norte, Alagoas, Sergipe, Piauí e Bahia.</li>
+            <div class="sub-imgs">
+                <img src="https://www.orthoptera.com.br/Recursos/Biomas/Fotos/media_p17sddpr2mjqtkl5bb5i6v1d483.png" alt="Área Caatinga">
+            </div>
+            <li><h4>Clima</h4></li>
+            <li>O clima da Caatinga é semiárido, com longos períodos de seca e chuvas irregulares. A temperatura é alta durante o ano todo, com variações significativas entre o dia e a noite.</li>
+            <li><b>Temperatura média:</b> entre 25 e 30 °C;</li>
+            <li><b>Precipitação:</b> entre 200 e 800 mm anuais;</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Relevo</h4></li>
+            <li>A Caatinga é caracterizada por um relevo predominantemente plano, com algumas regiões de colinas e serras. Os rios são intermitentes e secam durante os períodos de seca.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Hidrografia</h4></li>
+            <li>O sistema hidrográfico da Caatinga é composto por diversos rios temporários, como o Rio São Francisco, o principal rio que atravessa a região. Muitos desses rios só têm água durante a estação chuvosa.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Vegetação</h4></li>
+            <li>A flora da Caatinga é bastante adaptada às condições climáticas áridas e semiáridas dessa região do Brasil, caracterizada por longos períodos de seca e escassez de água. Com um total de cerca de 3.000 espécies de plantas, a vegetação da Caatinga apresenta uma incrível diversidade, mas com características muito específicas para suportar o clima hostil.</li>
+            <li><b>Espécies xerófitas:</b> Plantas adaptadas à falta de água, como aquelas com folhas reduzidas e raízes profundas que conservam ou buscam água.</li>
+            <li><b>Cactáceas e suculentas:</b> Plantas como o mandacaru e xique-xique, que armazenam água em seus tecidos.</li>
+            <li><b>Arbustos e árvores retorcidas:</b>Plantas como o juazeiro e umbuzeiro, com troncos adaptados para resistir ao clima severo.</li> 
+            <li><b>Sistemas radiculares profundas:</b>Raízes longas que acessam água subterrânea durante a seca.</li> 
+            <li><b>Flores e frutos adaptados:</b>Espécies que florescem na estação chuvosa e têm frutos que ajudam na dispersão.</li> 
+            <li><b>Ciclagem sazonal:</b>Muitas plantas perdem folhas durante a seca e voltam a brotar nas chuvas.</li>     
+            <li><b>Diversidade endêmica:</b> A Caatinga abriga espécies que só existem nesse bioma, como o carrapateiro e o pé-de-pau.</li>
+            <div class="sub-imgs">
+                <img src="https://www.infoescola.com/wp-content/uploads/2013/06/mandacaru_1029376084.jpg" alt="Vegetação Caatinga">
+                <p>Exemplo de Vegetação da Caatinga</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://semiaridovivo.org/wp-content/uploads/2020/08/Frase1e2_DSC2802-ricardoaraujo-scaled.jpg" alt="Vegetação Caatinga">
+                <p>Exemplo de Vegetação da Caatinga</p>
+            </div>
+            
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Fauna</h4></li>
+            <li>A Caatinga abriga um grande número de espécies da fauna brasileira, como, mamíferos, répteis, aves, anfíbios, entre eles, a cutia, o gambá, o preá, o veado-catingueiro, o tatu-peba, gatos selvagens, a asa branca, e uma variedade de insetos, que exercem grande importância para o bioma.</li>
+            <div class="sub-imgs">
+                <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/animais-da-caatinga-arara.jpg" alt="Fauna Caatinga">
+                <p>Arara</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://faunanews.com.br/wp-content/uploads/2021/04/arara-azul-lear-claudia-brasileiro-1-1.jpeg" alt="fauna-caat2">
+                <p>Araras Azuís</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://s2-g1.glbimg.com/npgJerdv3_pAIrtOYXXlR3IUfT8=/0x0:3969x3038/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/6/B/wZpsfZQ3GGKZAOfH3CCQ/img-4650.jpg" alt="tatu-bola">
+                <p>Tatu Bola</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Visão Geral</h4></li>
+            <li>A Caatinga é um bioma único no Brasil, sendo o único bioma exclusivamente brasileiro. Sua vegetação adaptada à seca e sua fauna diversificada fazem dela uma região especial e de grande importância para a biodiversidade do país.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4></li>
+            <li><b>Exclusividade:</b> A Caatinga é o único bioma do Brasil que ocorre apenas dentro das fronteiras do país, e é considerado um dos biomas mais ameaçados devido ao desmatamento e à desertificação.</li>
+            <li><b>Resistência à seca:</b> Muitas plantas da Caatinga, como o cacto, possuem adaptações que permitem armazenar água por longos períodos, o que as torna resistentes à seca extrema.</li>
+            <li><b>Animais adaptados:</b> Animais como o tatu-bola, o preá e o xexéu são típicos da Caatinga, com adaptações fisiológicas que os ajudam a sobreviver no clima árido e quente.</li>
+        </ol>
+    </div>
+
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

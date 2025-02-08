@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bioma Pantanal</title>
+</head>
+<body class="mf-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="biomas_animais.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <div class="container-an">
+        <h2 class="animal-title">Pantanal</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/biomas/pantanal/2048px-Pantanal,_Mato_Grosso,_Brasil.jpeg" alt="suiriri1">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/pantanal/2048px-Pantanal_Corumbá-MS_01.jpeg" alt="suiriri2">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/pantanal/2048px-Pantanal_em_Itiquira.jpeg" alt="suiriri3">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/pantanal/2048px-Pantanal_em_Mato_Grosso_Brasil.jpeg" alt="suiriri4">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/pantanal/30770636232_78dd6e25f3_k.jpg" alt="suiriri5">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/pantanal/2048px-River_in_the_Parque_Nacional_do_Pantanal_Matogrossense_-_Por_dentro_do_pantanal.jpeg" alt="suiriri6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O BIOMA</h4>
+        <ol class="infos-animais">
+            <li><h4>Área Total do Bioma</h4> Sua área é de 210 000 km², com 65% de seu território no estado de Mato Grosso do Sul e 35% no Mato Grosso. A região se encontra dividida entre duas subdivisões: Microrregião do Alto Pantanal (em Mato Grosso) e Microrregião do Baixo Pantanal e Microrregião de Aquidauana (em Mato Grosso do Sul).</li>
+            <div class="sub-imgs">
+                <img src="https://oncafari.org/wp-content/uploads/2019/05/mapa-pantanal.svg" alt="Área-pantanal">
+            </div>
+            <li><h4>Clima</h4></li> 
+            <li>O clima é quente e úmido no verão, frio e seco no inverno. A maior parte dos solos do Pantanal é arenosa e suporta pastagens nativas, que servem de alimento para herbívoros da região e para o gado bovino, introduzido pelos colonizadores da área.</li>
+            <li><b>Temperatura média:</b> As médias anuais registradas, em torno de 25ºC, têm como mínima 15ºC e máxima 34ºC. A umidade relativa do ar fica em torno de 50% no inverno e 75% no verão.</li>
+            <li><b>Precipitação:</b> A precipitação pluvial média anual é de 1.100mm.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Relevo</h4></li>
+            <li>A planície é o tipo de relevo predominante no Pantanal. Quando a planície está alagada, no meio das águas podem ser vistas elevações arenosas, com até seis metros de altura. Estas elevações são conhecidas como cordilheiras. Cercando a planície existem alguns terrenos mais altos, como chapadas, serras e maciços.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Hidrografia</h4></li>
+            <li>O Pantanal pertence à bacia hidrográfica do Alto Paraguai e, por isso, é composto pelos seus planaltos. Ao todo, 180 rios integram a bacia, que desaguam nos principais afluentes do Pantanal, como o Paraguai, Cuiabá e Aquidauana.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Vegetação</h4></li>
+            <li>A vegetação do Pantanal é muito variada, principalmente em função da inundação e do solo. Geralmente distribuídas em mosaico, as principais paisagens são: Baías: lagoas temporárias ou permanentes de tamanho variado, podendo apresentar muitas espécies de plantas aquáticas emergentes, submersas, ou flutuantes.</li>
+            <div class="sub-imgs">
+                <img src="https://static.preparaenem.com/2020/09/vegetacao-aquatica.jpg" alt="Vegetação Pantanal">
+                <p>Exemplo de Vegetação do Pantanal</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://s2-g1.glbimg.com/6uch2bDpj56EkBOrnuZzv0BpR0g=/0x0:1006x567/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/M/A/fyfXaJSnmPaWWBTAfgBg/cf68d17b-bc7b-40f0-aebc-464478127d6c.jpg" alt="Vegetação Pantanal">
+                <p>Exemplo de Vegetação do Pantanal</p>
+            </div>
+            
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Fauna</h4></li>
+            <li>Os animais mais conhecidos do Pantanal são o tuiuiú, a onça-pintada, o jacaré-do-pantanal, o tamanduá-bandeira, a arara-azul-grande, a ariranha, a sucuri-amarela, o cervo-do-pantanal, a surucucu-do-pantanal e o dourado. O tuiuiú é considerado a ave símbolo do Pantanal.</li>
+            <div class="sub-imgs">
+                <img src="https://www.sospantanal.org.br/wp-content/uploads/2019/02/800px-Jabiru_Mato_Grosso_Pantanal_Brazil-3edit.jpg" alt="Fauna-pant">
+                <p>Tuiuiú</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://sospantanal.org.br/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-29-at-10.12.08.jpeg" alt="fauna-pant2">
+                <p>Onça-Pintada</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2019/04/Pteronura-brasiliensis-1-1024x768.jpg" alt="fauna-pant3">
+                <p>Ariranha</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Visão Geral</h4></li>
+            <li>O Pantanal é um dos maiores e mais importantes biomas de áreas alagáveis do mundo, localizado principalmente no Brasil, mas também se estendendo por partes da Bolívia e do Paraguai. É uma região de vasta planície inundável, que abriga uma rica biodiversidade, sendo considerada um dos ecossistemas mais produtivos e diversificados do planeta. Durante a estação das chuvas, grandes áreas do Pantanal são cobertas por água, formando vastos campos alagados, o que favorece a formação de habitats únicos para uma variedade de espécies, incluindo jacarés, capivaras, onças-pintadas, aves como a tuiuiú e diversas espécies de peixes. Além da fauna impressionante, o bioma também é rico em flora, com árvores típicas de áreas alagadas e vegetação de campos inundáveis. Sua importância ecológica vai além da biodiversidade, sendo fundamental para o equilíbrio hídrico e climático da região, além de servir como um importante reservatório de carbono. O Pantanal, no entanto, enfrenta ameaças como o desmatamento, a expansão agrícola e as queimadas, que colocam em risco sua preservação.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4></li>
+            <li><b>Maior área alagável do mundo</b> O Pantanal é o maior bioma de áreas alagáveis do planeta, cobrindo cerca de 150 mil km², com grande parte de sua extensão no Brasil, nos estados de Mato Grosso e Mato Grosso do Sul.</li>
+            <li><b>Biodiversidade impressionante</b> Estima-se que o Pantanal abriga mais de 1.100 espécies de aves, 400 espécies de peixes, 300 de mamíferos e 350 de répteis e anfíbios. Ele é considerado um dos biomas mais ricos em diversidade biológica do mundo, com muitos de seus habitantes únicos e endêmicos.</li>
+            <li><b>Temporada das chuvas e secas</b> Durante a estação das chuvas (de novembro a março), o Pantanal sofre alagamentos extensivos. Em contraste, na estação seca (de abril a outubro), as águas recuam, deixando vastas áreas de terra exposta. Esse ciclo é fundamental para a manutenção do ecossistema.</li>
+            <li><b>O "Reino das Aves"</b> O Pantanal é um paraíso para os observadores de aves. Entre as muitas espécies que habitam a região, uma das mais emblemáticas é o tuiuiú, uma garça símbolo do Pantanal e também a ave símbolo do estado de Mato Grosso do Sul.</li>
+            <li><b>A onça-pintada do Pantanal</b> O Pantanal é um dos melhores lugares do mundo para observar a onça-pintada (Panthera onca) em seu habitat natural. A região tem uma das maiores densidades dessa espécie, que é uma predadora chave no ecossistema.</li>
+            <li><b>Riqueza hídrica</b> O Pantanal é alimentado por vários rios e córregos, como o Rio Paraguai, que drena a água da região, formando um sistema complexo de drenagem que mantém o bioma inundado por longos períodos. Esse sistema de alagamento e drenagem é vital para a fertilização do solo e o ciclo de vida de muitas espécies.</li>
+            <li><b>Pesca e culinária</b> A pesca é uma atividade tradicional no Pantanal, e o pintado, surubim e pacú são alguns dos peixes mais comuns na culinária local. A gastronomia pantaneira também é rica em pratos como o arroz com pequi e o churrasco de peixe.</li>
+            <li><b>Pântano ou Pantanal?</b> O nome "Pantanal" vem do termo espanhol "pantan" (pântano). Apesar do nome sugerir uma área com solo permanentemente alagado, o Pantanal é, na verdade, um ecossistema dinâmico, com áreas secas e inundadas, conforme o ciclo das chuvas.</li>
+            <li><b>Queimadas</b> O Pantanal é frequentemente afetado por queimadas, especialmente durante a estação seca. Essas queimadas naturais são parte do ciclo ecológico, mas quando exacerbadas pela ação humana, elas podem causar danos graves à vegetação e à fauna local.</li>
+            <li><b>Mestre das águas</b> O Pantanal é conhecido por ser o "mestre das águas" devido à sua capacidade única de armazenar e distribuir grandes volumes de água, que têm um impacto profundo nas comunidades e nos ecossistemas ribeirinhos e adjacentes.</li>
+        </ol>
+    </div>
+
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

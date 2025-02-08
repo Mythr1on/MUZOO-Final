@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bioma Mata-Atlântica</title>
+</head>
+<body class="mf-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="biomas_animais.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+
+    <div class="container-an">
+        <h2 class="animal-title">Mata Atlântica</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/biomas/mata_atlantica/mata_atlan1.jpeg" alt="suiriri1">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/mata_atlantica/mata_atlan2.jpg" alt="suiriri2">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/mata_atlantica/mata_atlan3.jpeg" alt="suiriri3">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/mata_atlantica/mata_atlan4.jpeg" alt="suiriri4">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/mata_atlantica/mata_atlan5.jpg" alt="suiriri5">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O BIOMA</h4>
+        <ol class="infos-animais">
+            <li><h4>Área Total do Bioma</h4> Este bioma ocupava uma área de 1.110.182 Km², e correspondia a 15% do território nacional mas hoje restam apenas 12,5% da floresta que existia originalmente. É constituída principalmente por mata ao longo da costa litorânea que vai do Rio Grande do Norte ao Rio Grande do Sul.</li>
+            <div class="sub-imgs">
+                <img src="https://www.al.sp.gov.br/repositorio/noticia/N-05-2022/fg287506.jpg" alt="Área-atlant">
+            </div>
+            <li><h4>Clima</h4></li>
+            <li>O clima predominante na Mata Atlântica é o tropical úmido, que apresenta temperaturas elevadas e extensos períodos de chuvas, muito abundantes.</li>
+            <li><b>Temperatura média:</b> A temperatura varia 21,7-30,8 ° C, e umidade do ar entre 80 e 85%.</li>
+            <li><b>Precipitação:</b> A precipitação anual oscila entre 750 a 1000 mm.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Relevo</h4></li>
+            <li>O relevo da Mata Atlântica é constituído por principalmente por planícies costeiras e colinas que são acompanhadas por uma cadeia de montanhas. Os solos da Mata Atlântica não possuem fertilidade elevada.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Hidrografia</h4></li>
+            <li>A Mata Atlântica abriga uma intrincada rede de bacias hidrográficas formadas por grandes rios como o Paraná, o Tietê, o São Francisco, o Doce, o Paraíba do Sul, o Paranapanema e o Ribeira de Iguape.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Vegetação</h4></li>
+            <li>A Mata Atlântica é composta por formações florestais nativas (Floresta Ombrófila Densa; Floresta Ombrófila Mista, também denominada de Mata de Araucárias; Floresta Ombrófila Aberta; Floresta Estacional Semidecidual; e Floresta Estacional Decidual), e ecossistemas associados (manguezais, vegetações de restingas, campos de altitude, brejos interioranos e encraves florestais do Nordeste). </li>
+            <div class="sub-imgs">
+                <img src="https://ambientes.ambientebrasil.com.br/wp-content/uploads/2021/01/mata_atlantica.jpg" alt="Vegetação Mata-Atlântica">
+                <p>Exemplo de Vegetação da Mata-Atlântica</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/06/area-da-mata-atlantica.jpg" alt="Vegetação Mata-Atlântica">
+                <p>Exemplo de Vegetação da Mata-Atlântica</p>
+            </div>
+            
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Fauna</h4></li>
+            <li>Entre as espécies mais conhecidas da fauna da Mata Atlântica estão o mico-leão dourado, o bicho preguiça, a onça-pintada, a capivara, o tamanduá-bandeira, a jaguatirica, o tucano, o beija-flor, as araras, o jacaré-do-papo-amarelo, a rã-de-vidro, o pacu e o pintado.</li>
+            <div class="sub-imgs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/640px-Bicho-pregui%C3%A7a_3.jpg" alt="Fauna-atlant">
+                <p>Bicho-Preguiça</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/6305919/large.jpeg" alt="fauna-atlant">
+                <p>Rã-de-vidro</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://guiadepescaiturama.com.br/wp-content/uploads/2022/06/Schwarzer-Pacu-9.jpg" alt="fauna-atlant">
+                <p>Pacu</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Visão Geral</h4></li>
+            <li>A Mata Atlântica é um dos biomas mais ricos e biodiversos do Brasil, abrangendo uma vasta área ao longo da costa do país, desde o Rio Grande do Norte até o Rio Grande do Sul. Originalmente, cobria cerca de 1,3 milhão de quilômetros quadrados, mas devido ao desmatamento, restam apenas fragmentos de sua vegetação nativa. Esse bioma é caracterizado por uma grande diversidade de espécies de flora e fauna, muitas das quais são endêmicas e estão ameaçadas de extinção. Além de sua biodiversidade, a Mata Atlântica desempenha um papel fundamental na regulação climática, no ciclo da água e na proteção do solo. É vital para o equilíbrio ambiental, mas enfrenta ameaças constantes de urbanização e exploração econômica. A conservação da Mata Atlântica é essencial para preservar esses serviços ecológicos e garantir a sobrevivência das espécies que ali habitam.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4></li>
+            <li><b>Diversidade de Espécies</b> A Mata Atlântica abriga cerca de 20.000 espécies de plantas e aproximadamente 2.200 espécies de animais, muitas das quais são endêmicas, ou seja, só podem ser encontradas nesse bioma.</li>
+            <li><b>Ameaçada de Extinção</b> A Mata Atlântica foi amplamente desmatada ao longo dos séculos. Hoje, restam apenas cerca de 12% da área original do bioma. Mesmo assim, as áreas restantes são de grande importância para a biodiversidade mundial.</li>
+            <li><b>Clima e Características</b> A Mata Atlântica se caracteriza por um clima tropical, com uma grande variedade de tipos de vegetação, como florestas de araucárias, manguezais, restingas e até campos de altitude. Ela se estende desde a Bahia até o Rio Grande do Sul, cobrindo uma grande diversidade de paisagens.</li>
+            <li><b>Áreas de Proteção</b> Existem diversas unidades de conservação, como parques e reservas, que visam proteger as áreas remanescentes da Mata Atlântica. Algumas dessas áreas, como o Parque Nacional de Itatiaia e a Reserva Biológica de Poço das Antas, são fundamentais para a preservação de espécies ameaçadas, como o mico-leão-dourado e a onça-pintada.</li>
+            <li><b>O Papel nas Chuvas</b> A Mata Atlântica tem um papel crucial no ciclo hidrológico e na formação de chuvas. As árvores da floresta liberam vapor d'água, que se condensa nas nuvens e contribui para a manutenção das chuvas regulares na região. Por isso, sua preservação é essencial para a estabilidade do clima e a disponibilidade de água.</li>
+            <li><b>Conexões com o Mar</b> O bioma também inclui ecossistemas costeiros, como manguezais e restinga. Essas áreas são vitais para a proteção das zonas costeiras, além de servirem como berçários para diversas espécies marinhas, como peixes e crustáceos.</li>
+            <li><b>O Mico-Leão-Dourado</b> Uma das espécies mais emblemáticas da Mata Atlântica é o mico-leão-dourado, um pequeno primata que habita as florestas do Rio de Janeiro. Este animal foi considerado extinto na natureza na década de 1980, mas graças a esforços de preservação, como programas de reintrodução, sua população tem aumentado.</li>
+            <li><b>O Corredor Ecológico</b> Para ajudar na recuperação de áreas desmatadas e na preservação de espécies, foram criados corredores ecológicos que conectam fragmentos de florestas, permitindo a migração e a reprodução de animais e a troca genética entre populações.</li>
+            <li><b>Amazônia x Mata Atlântica</b> Muitas pessoas associam a Amazônia como a maior floresta tropical do Brasil, mas a Mata Atlântica é, na verdade, mais biodiversa em termos de espécies de plantas e animais. Seu valor ecológico é imenso, não só por sua biodiversidade, mas também pelos serviços ambientais que oferece.</li>
+            <li><b>A Vegetação de Altitude</b> Em áreas mais altas da Mata Atlântica, como no Planalto Paulista e nas serras do Rio de Janeiro, a vegetação é composta por florestas de araucárias e campos de altitude. Essas regiões abrigam espécies raras de plantas, como orquídeas e bromélias, além de animais como o papagaio-de-cara-roxa.</li>
+        </ol>
+    </div>
+
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

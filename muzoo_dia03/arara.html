@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Arara-Canindé</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <div class="container-an">
+        <h2 class="animal-title">Arara-Canindé</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/arara/arara1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/arara/arara2.jpeg" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/arara/arara3.jpg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/arara/arara4.jpg" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/arara/arara5.webp" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/arara/arara6.jpg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Ara ararauna</i><br>(Linnaeus, 1758)</li>
+            <li><b>Nomes Populares:</b> Arara de Barriga Amarela, Arara Azul, Arara Amarela.</li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/arara_som.mp4"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Psittaciformes</li>
+            <li><b>Família:</b> Psittacidae</li>
+            <li><b>Subfamília:</b> Arinae</li>
+            <li><b>Espécie:</b> A. ararauna</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico</li>
+            <li><b>Hábitos Alimentares</b></li>
+            <li>A Arara Canindé se alimenta principalmente de: </li><br>
+            <li><b>Frutos e Sementes:</b> As araras-canindé podem comer principalmente frutos e sementes, auxiliando na dispersão dessas plantas. Elas consomem uma grande variedade de frutas maduras e verdes, incluindo espécies como Mauritia vinifera, Astrocaryum sp., Bactris sp., e outras sementes de palmeiras. <br>
+            <b> Brotos, Flores e Néctar:</b> Além disso, essas aves também se alimentam de brotos, flores e néctar. <br>
+            <b>Insetos e Larvas:</b> Embora não seja sua principal fonte de alimento, é possível que as araras-canindé também consumam insetos e suas larvas.</li>
+            <div class="sub-imgs">
+                <img src="imgs/aves/arara/arara_aliment.jpg" alt="arara_se_alimentando"><p>Arara se Alimentando.</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica do corpo</h4><br></li>
+            <li><b>Tamanho Médio:</b> As araras-canindé são aves de tamanho médio. Elas têm um corpo robusto e uma cauda longa. O comprimento total varia, mas geralmente fica entre 75 a 85 centímetros.</li>
+            <li><b>Dimensões gerais</b><br></li>
+            <li><b>Envergadura das Asas:</b> A envergadura das asas (distância de uma ponta da asa à outra) pode atingir cerca de 100 a 110 centímetros.</li>
+            <li><b>Peso:</b> O peso médio de uma arara-canindé é de aproximadamente 1,1 a 1,4 quilogramas.</li>
+            <li><b>Plumagem</b><br></li>
+            <li>A plumagem da arara-canindé é vibrante e colorida. Ela apresenta as seguintes características: <br></li>
+            <li><b>Cabeça e Pescoço:</b> Azul intenso na testa, nuca e parte superior do pescoço, com uma faixa amarela na testa.</li>
+            <li><b>Costas e Asas:</b> Azul nas costas e asas, com penas de voo primárias e secundárias azuis e amarelas.</li>
+            <li><b>Barriga e Cauda:</b> Barriga amarela e cauda longa com penas azuis e amarelas.</li>
+            <li><b>Face e Olhos:</b> A face tem penas nuas e brancas ao redor dos olhos, que são amarelos.</li>
+            <li><b>Bico e Pés</b><br></li>
+            <li>O bico é forte e curvo, adaptado para quebrar sementes e frutas. <br>Os pés são zygodactyl (dois dedos voltados para frente e dois para trás), permitindo que a arara se agarre a galhos e troncos.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento</h4><br></li>
+            <li><b>Comportamento:</b> As Araras Canindé são aves muito sociáveis e costumam viver em pares ou pequenos grupos. Elas também são frequentemente vistas em grandes bandos de até 50 espécimes. <br> Além disso, elas são animais muito ativos, gostam de escalar, balançar, pular e mastigar. Elas emitem sons agudos para se comunicar com outras aves da mesma espécie e também para alertar sobre possíveis perigos.</li>
+            <li><b>Estratégias de Caça:</b> A Arara Canindé tem uma alimentação muito variada, podendo comer principalmente frutos e sementes, auxiliando em sua dispersão, mas também comem brotos, flores e néctar. <br> Ela verifica a disponibilidade e a facilidade na captura do alimento e também o retorno energético que este alimento irá proporcionar.</li>
+            <li><b>Defesa e Sobrevivência no ambiente:</b> A Arara Canindé desempenha um papel fundamental na perpetuação das florestas através da dispersão de sementes. <br> Infelizmente, a espécie está ameaçada de extinção, devido principalmente à destruição de seu habitat natural e à caça ilegal. No entanto, ela conseguiu se adaptar ao meio urbano devido às árvores frutíferas presentes na cidade, das quais se alimentam, e por apresentarem locais adequados para sua reprodução.</li>
+            <li><b>Principais Predadores da Espécie</b><br></li>
+            <li><b>Humanos:</b> Os seres humanos são, de longe, os maiores predadores das araras, por vários motivos. Eles caçam a arara por causa de suas penas e carne, além de contrabandear os ovos e os pássaros jovens para vender na indústria de animais de estimação.</li>
+            <li><b>Águias:</b> Longe do contato humano, as águias são os principais predadores das araras na natureza. A harpia caça a arara quando essas estão nas copas das árvores ou em pleno voo.</li>
+            <li><b>Cobras:</b> As araras não se dão bem no chão e, por isso, não aterrissam nele a menos que estejam em um bando de 30 ou mais aves. Cobras como a jibóia e a sucuri caçam araras como a canindé.</li>
+            <li><b>Animais Domésticos:</b> Outros animais domésticos, como cães e gatos, representam um sério risco para as araras. Se deixados sem supervisão e no mesmo local que a arara-canindé, podem machucá-la gravemente.</li>
+            <li><b>Primatas de médio porte e Gavião-Real:</b> Quando na natureza, seus maiores predadores são os primatas de médio porte como o mico-leão-dourado e o gavião real.</li>
+            <li><b>Tucanos:</b> Tucanos podem comer seus ovos.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Biomas de Ocorrência no Brasil</h4><br></li>
+            <li><b>Amazonia:</b> Este é o maior bioma do Brasil e um dos habitats naturais da Arara Canindé.</li>
+            <li><b>Mata Atlântica:</b>  Apesar do desmatamento, a Arara Canindé ainda pode ser encontrada neste bioma.</li>
+            <li><b>Pantanal:</b> Este é um dos principais habitats da Arara Canindé. No entanto, sua ocorrência no Pantanal é considerada rara.</li>
+            <li><b>Cerrado:</b> Este bioma também abriga a Arara.</li>
+            <li><b>Caatinga:</b> A Arara Canindé também pode ser encontrada nesse bioma.</li>
+            <li>Além desses biomas, a Arara Canindé tem se adaptado a viver em áreas urbanas, como a cidade de Campo Grande, no Mato Grosso do Sul, que ficou conhecida como a “capital das araras” devido à presença significativa dessas aves. Isso se deve à presença de árvores frutíferas na cidade, das quais se alimentam, e por apresentarem locais adequados para sua reprodução.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência no Brasil</b></li>
+                <img src="imgs/aves/arara/mapa-caninde.png" alt="mapa-caninde">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Aspectos Reprodutivos</h4><br></li>
+            <li>A Arara Canindé (Ara ararauna) é uma ave monogâmica, ou seja, uma vez que encontra um parceiro, permanece com ele por toda a vida. Elas fazem seus ninhos a cada dois anos, geralmente entre os meses de agosto e janeiro. Para isso, cavam buracos nos troncos de palmeiras e outras árvores. <br> A postura consiste em 2 ou 3 ovos de 46,4 x 35,9 mm que a fêmea incuba por 24 a 26 dias. Durante este período, o macho é responsável por alimentar a fêmea e garantir a segurança do ninho. Os filhotes nascem cegos e sem penas, e são alimentados pelo pai e pela mãe com sementes e várias frutas que regurgitam em suas gargantas. <br> Após a eclosão, os filhotes permanecem no ninho por cerca de 13 semanas e só poderão voar dentro de uma semana após deixar o ninho. Mesmo depois desse tempo, os filhotes permanecerão com seus pais por pelo menos mais 12 meses.</li>
+        </ol>
+    </div>
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="index.js"></script>
+</html>

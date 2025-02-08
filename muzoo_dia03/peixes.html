@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Peixes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <section class="header-pxs">
+        <div class="text-box-anf">
+            <h1>Peixes</h1>
+            <p>"Afogando os inimigos..."</p>
+        </div>
+    </section>
+
+   <!--INTRODUÇÃO-->
+        <div class="faixa-texto">
+        <h1>MAS O QUE É UM PEIXE?</h1>
+    </div>
+    <div class="bg-area1">
+        <div class="area-info-textos">
+            <div class="caixa-texto">
+    <p>Os peixes são um grupo diversificado de vertebrados aquáticos que vivem em ambientes marinhos e de água doce. Eles são conhecidos por suas brânquias, que permitem a respiração subaquática, e por seus corpos cobertos por escamas. Os peixes têm uma grande variedade de formas, tamanhos e comportamentos, adaptados a diferentes habitats aquáticos.<br>Os peixes geralmente têm nadadeiras que ajudam na locomoção e na estabilidade na água. A maioria dos peixes possui um sistema circulatório eficiente e uma linha lateral que detecta vibrações e movimentos na água, auxiliando na navegação e na caça.</p>
+            </div>
+            <img src="imgs/peixes/IMG_PX1.png" alt="img">
+        </div>
+    </div>
+
+    <div class="bg-area2">
+        <div class="area-info-textos">
+            <img src="imgs/peixes/IMG_PX2.png" alt="img">
+        <div class="caixa-texto2">
+        <p>A reprodução dos peixes varia amplamente entre as espécies, com alguns produzindo ovos que são fertilizados externamente e outros realizando a fertilização interna. Além disso, muitos peixes têm estratégias de cuidado parental para proteger seus ovos e filhotes.<br>Os peixes desempenham papéis ecológicos importantes, como predadores, presas e ajudantes na manutenção da saúde dos ecossistemas aquáticos. Sua distribuição é global, cobrindo todos os oceanos, rios e lagos, e eles ocupam uma vasta gama de nichos ecológicos.</p>
+      </div>
+    </div>
+    </div>
+      
+    <div class="faixa-texto">
+        <h1>EXEMPLAR PRESENTE NO MUZOO</h1>
+    </div>
+        <p>Até o momento o MUZOO conta com somente um exemplar da classe.</p>
+<div class="bg-area-animais_ind">
+        <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <!--INFORMAÇÃO DO Peixe-->
+    
+<div class="container1">
+    <h2 class="animal-title">Tilápia do Rio Nilo</h2>
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="imgs/peixes/tilapia1.jpg" alt="peixe1">
+            </div>
+            <div class="item">
+                <img src="imgs/peixes/tilapia2.webp" alt="peixe2">
+            </div>
+            <div class="item">
+                <img src="imgs/peixes/tilapia3.jpeg" alt="peixe3">
+            </div>
+            <div class="item">
+                <img src="imgs/peixes/tilapia4.jpg" alt="peixe4">
+            </div>
+            <div class="item">
+                <img src="imgs/peixes/tilapia5.jpg" alt="peixe5">
+            </div>
+            <div class="item">
+                <img src="imgs/peixes/tilapia6.jpg" alt="peixe6">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="app-slider.js"></script>
+    <hr class="hr2">
+    <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+    <ol class="infos-animais">
+        <li><b>Nome Científico:</b> <i>Oreochromis niloticus</i> <br> Linnaeus, 1758</li>
+        <li><b>Nome Popular:</b> Tilápia do Rio Nilo</li>
+        <li></li>
+        <li><b>Tem Risco de Extinção?:</b> Atualmente, a Tilápia do Rio Nilo não está ameaçada de extinção. É amplamente cultivada e distribuída, mas como qualquer espécie introduzida, pode ter impactos ambientais em alguns ecossistemas.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Classificação Biológica</h4><br><b>Domínio:</b> Eukaryota<br><b>Reino:</b> Animalia<br><b>Filo:</b> Chordata<br><b>Classe:</b> Actinopterygii<br><b>Ordem:</b> Cichliformes<br><b>Família:</b> Cichlidae<br><b>Gênero:</b> Oreochromis<br><b>Espécie:</b> O. niloticus</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Hábitos Alimentares</h4><br></li>
+        <li><b>Nutrição:</b> Heterotrófico</li>
+        <li><b>Dieta Geral:</b> A Tilápia do Rio Nilo é uma espécie onívora e se alimenta de uma ampla variedade de alimentos, incluindo algas, plantas aquáticas, pequenos invertebrados e zooplâncton. Em cultivo, a dieta pode ser suplementada com ração formulada.</li>
+        <li><b>Principais Tipos de Alimentos</b><br><b>Plantas e Algas:</b><br>A tilápia é conhecida por sua capacidade de consumir grandes quantidades de algas e matéria vegetal, o que pode ajudar na manutenção da qualidade da água em ambientes aquáticos.<br><b>Invertebrados:</b><br>Consome pequenos invertebrados aquáticos, como insetos e crustáceos, que complementam sua dieta.</li>
+        <div class="sub-imgs">
+            <img src="imgs/peixes/tilapia_aliment.webp" alt="tilapia-comendo-ração"><p>Tilápia do Rio Nilo alimentando-se de ração.</p>
+        </div>
+        <li><b>Vertebrados:</b><br>A Tilápia do Rio Nilo pode ocasionalmente consumir pequenos peixes e outros pequenos vertebrados que encontra em seu habitat.</li>
+        <li><b>Outros Alimentos:</b><br>Em ambientes de cultivo, a tilápia pode ser alimentada com ração composta de ingredientes vegetais e proteínas para garantir um crescimento adequado.</li>
+        <li><b>Métodos de Alimentação:</b><br>A Tilápia do Rio Nilo usa sua boca para triturar e engolir alimentos. Em ambientes naturais, ela frequentemente se alimenta de maneira oportunista, aproveitando qualquer recurso disponível.</li>
+        <li><b>Impactos Ambientais:</b><br>Quando introduzida em novos habitats, a Tilápia do Rio Nilo pode competir com espécies nativas por recursos e alterar a estrutura das comunidades aquáticas, o que pode ter efeitos ecológicos negativos.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Morfologia Básica do Corpo</h4><br><b>Cabeça e Boca:</b><br>A cabeça da Tilápia do Rio Nilo é relativamente grande e arredondada. Possui uma boca ampla adaptada para triturar alimentos vegetais e invertebrados.<br><b>Olhos:</b><br>Os olhos são grandes e posicionados lateralmente, proporcionando uma boa visão periférica.<br><b>Corpo:</b><br>O corpo é robusto e comprimido lateralmente, com escamas pequenas e um padrão de coloração que varia de prateado a verde-oliva.<br><b>Membros:</b><br>As nadadeiras são bem desenvolvidas, com nadadeiras dorsais e peitorais que ajudam na locomoção e na estabilidade na água.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Tamanho Médio e Dimensões Gerais</h4><br><b>Comprimento:</b><br>A Tilápia do Rio Nilo pode atingir comprimentos de até 60 cm em ambientes naturais, mas em cativeiro, o tamanho médio é geralmente menor.<br><b>Peso:</b><br>O peso pode variar entre 1 a 3 kg, com indivíduos maiores atingindo até 5 kg.</li>
+        <li><b>Dimorfismo Sexual:</b><br>Os machos e fêmeas são semelhantes em aparência, mas os machos tendem a ser um pouco maiores e mais robustos que as fêmeas. Em algumas fases da reprodução, as diferenças podem se tornar mais evidentes.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Aspectos Relacionados a Camuflagem</h4><br></li>
+        <li><b>Coloração:</b><br>A coloração da Tilápia do Rio Nilo varia do prateado ao verde-oliva, com padrões que ajudam a camuflar o peixe em ambientes aquáticos naturais, como rios e lagos. Em água mais clara, o peixe pode ter uma coloração mais prateada, enquanto em água turva, tende a ser mais escuro.</li>
+        <li><b>Textura da Pele:</b><br>A pele da Tilápia do Rio Nilo é coberta por escamas pequenas e lisas, que ajudam a reduzir a fricção na água e contribuem para a proteção contra parasitas e lesões.</li>
+        <li><b>Comportamento de Camuflagem:</b><br>A Tilápia do Rio Nilo usa sua coloração natural para se misturar com o ambiente aquático, ajudando a evitar predadores e se aproximar das presas.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Comportamento Geral</h4><br>A Tilápia do Rio Nilo é geralmente um peixe de comportamento tranquilo e adaptável. É uma espécie sociável que pode formar cardumes em ambientes naturais. No cultivo, ela se adapta bem a diferentes condições e pode ser criada em uma variedade de sistemas aquáticos.</li>
+        <li><b>Estratégias de Caça:</b><br>A Tilápia do Rio Nilo usa sua visão para localizar alimentos e é conhecida por sua capacidade de forragear eficientemente em diferentes tipos de habitats aquáticos.</li>
+        <li><b>Defesa:</b></li>
+        <li><b>Resistência Ambiental:</b> A Tilápia do Rio Nilo é conhecida por sua resistência e capacidade de se adaptar a diferentes condições ambientais, incluindo variações de temperatura e qualidade da água.</li>
+        <li><b>Reprodução:</b></li>
+        <li>A Tilápia do Rio Nilo é uma espécie que se reproduz de forma prolífica. Ela constrói ninhos em substratos rasos e a fêmea pode depositar uma grande quantidade de ovos, que são incubados na boca da mãe até a eclosão.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Principais Predadores da Espécie</h4><br></li>
+        <li>Em seu habitat natural, a Tilápia do Rio Nilo enfrenta predadores como grandes peixes carnívoros e aves aquáticas. Em ambientes de cultivo, os predadores podem incluir animais selvagens que ocasionalmente invadem os sistemas de aquicultura.</li>
+        <li><b>Outros Peixes:</b> Peixes maiores, como predadores nativos, podem se alimentar de tilápias.</li>
+        <li><b>Aves Aquáticas:</b> Algumas aves aquáticas, como garças e pelicanos, também são conhecidas por predar tilápias.</li>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Área de Ocorrência</h4><br></li>
+        <li><b>África:</b> A Tilápia do Rio Nilo é nativa da África e é encontrada em vários rios e lagos do continente, incluindo o Nilo e seus afluentes.</li>
+        <li><b>Introdução Global:</b> Devido ao seu valor econômico e à sua capacidade de adaptação, a Tilápia do Rio Nilo foi introduzida em muitos outros países ao redor do mundo, incluindo América Latina e Ásia.</li>
+        <div class="mapa-ocorr">
+            <li><b>Mapa de Ocorrência Global</b></li>
+            <img src="https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/en/images/oreochromis_niloticus.jpg" alt="mapa-tilapia-nilo">
+        </div>
+        <hr style="height: 3px; background-color: #000;">
+        <li><h4>Curiosidades</h4><br></li>
+        <li><b>Importância Econômica:</b> A Tilápia do Rio Nilo é uma das espécies de peixe mais cultivadas no mundo, especialmente na aquicultura, devido ao seu crescimento rápido e sabor agradável.</li>
+        <li><b>Adaptabilidade:</b> Sua capacidade de viver em uma ampla gama de condições ambientais faz da Tilápia do Rio Nilo uma espécie valiosa para a pesquisa em aquicultura e gestão de recursos hídricos.</li>
+        <li><b>Impactos Ambientais:</b> Embora seja uma espécie útil para cultivo, sua introdução em ambientes fora de seu habitat natural pode causar desequilíbrios ecológicos e competição com espécies nativas.</li>
+    </ol>
+</div>
+</div>
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

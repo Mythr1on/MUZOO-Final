@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves-Acauã</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <main id="conteudo">
+    <div class="container-an">
+        <h2 class="animal-title">Acauã</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/acaua/acaua1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/acaua/acaua2.jpg" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/acaua/acaua3.jpg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/acaua/acaua4.jpg" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/acaua/acaua5.jpg" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/acaua/acaua6.jpg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Herpetotheres cachinnans</i> <br> (Linnaeus, 1758)</li>
+            <li><b>Nomes Populares:</b> macauá, acanã, cuã, cauã, coã, deus-quer-um, bispo, gavião-coveiro, cobreiro, papa-cobra, uacanã e macaguá.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/acaua_som.mp3"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Falconiformes</li>
+            <li><b>Família:</b> Falconidae</li>
+            <li><b>Subfamília:</b> Herpetotherinae</li>
+            <li><b>Espécie:</b> H. cachinnans</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico</li>
+            <li><b>Hábitos Alimentares</b></li>
+            <li><b>Principais Presas:</b> Cobras e Morcegos,  é conhecido por ser um caçador nato desses animais. <br>É uma espécie Diurna, mas pode caçar no crepúsculo para apanhar morcegos.</li>
+            <li>Utiliza suas garras firmes e protegidas (possuem uma espécie de pele escamosa e grossa para não permitir a mordida das cobras penetrarem no corpo) para agarrar suas presas.</li>
+            <div class="sub-imgs">
+                <img src="https://www.passaro.org/wp-content/uploads/2022/05/reproducao-do-acaua-768x512.jpg" alt="acaua_filhote"><p>Acauã filhote.</p>
+            </div>
+        
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica do Corpo</h4><br></li>
+            <li><b>Comprimento:</b> O falcão Acuã mede entre 44 a 56cm de comprimento.</li>
+            <li><b>Envergadura:</b> A envergadura (distãncia entre as pontas das asas) varia de 80 a 105cm.</li>
+            <li><b>Peso:</b> O peso médio desse falcão está entre 480 a 800 gramas.</li>
+            <li><b>Cabeça:</b> Possui uma cabeça grande em relação ao corpo, com um bico robusto e curvado, típico das aves de Rapina.</li>
+            <li><b>Plumagem:</b> A plumagem é geralmente marrom com manchas e listras brancas e pretas. </li>
+            <li><b>Cauda:</b> A cauda é relativamente longa, com listras transversais.</li>
+            <li><b>Patas:</b> As patas são fortes, com garras afiadas adaptadas para capturar presas.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento Geral e Estratégias de Caça</h4><br></li>
+            <li><B>Comportamento Geral</B><br>O acauã é conhecido por sua agilidade e habilidade de caça. Ele é um predador especializado em capturar serpentes, incluindo as peçonhentas.
+            <br>Essa ave de rapina não é imune ao veneno das serpentes, mas sua estratégia de predação evita que ele seja picado. Ele realiza voos surpresa com ataques certeiros, o que contribui para sua alta eficiência na captura de presas. <br>Além de ser um exímio caçador, o acauã também é conhecido por sua confiança na habilidade de caça, mesmo quando enfrenta serpentes venenosas.</li>
+            <li><b>Estratégias de caça:</b> O sucesso do acauã na captura de serpentes é resultado de um voo estratégico. Ele surpreende suas presas e minimiza o risco de ser picado. <br> O acauã captura diversas espécies de serpentes, tanto venenosas quanto não venenosas. Sua taxa de eficiência é impressionante, e raramente ele é picado por serpentes durante a caça.</li>
+            <li><b>Defesa e Sobrevivência:</b> 
+                A ave não possui imunidade ao veneno das serpentes, mas sua técnica de ataque e evasão é fundamental para evitar ferimentos. <br>
+                Além de ser um predador de serpentes, o acauã também se alimenta de outros pequenos animais, como lagartos e roedores. <br>
+                Sua confiança na própria habilidade de caça e sua capacidade de evitar picadas contribuem para sua sobrevivência no ambiente natural.
+            </li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência No Brasil</h4><br></li>
+            <li>Ele pode ser encontrado em uma variedade de habitats florestais no Brasil, bem como no México e no Paraguai. Embora seja mais comum na Amazônia e nas margens de florestas, o acauã também habita áreas mais secas, como o cerrado e a Caatinga. Além disso, é comum encontrá-lo em bordas de florestas, capoeiras, florestas de galeria, campos com árvores e cerrados.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência no Brasil</b></li>
+                <img src="imgs/aves/acaua/mapa-acaua.png" alt="mapa-acaua">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4><br></li>
+            <li><b>Significado do Nome:</b>O nome “Acauã” tem origem indígena e significa “aquele que grita”. Esse nome faz referência ao chamado característico do Acauã, que é um grito alto e estridente.<br></li>
+            <li>Seu nome científico é derivado do grego “herpeton” (cobra, serpente, réptil) e do latim “cachinnans” (gargalhando, que gargalha), resultando em "Caçador de serpentes que gargalha".</li>
+            <li><b>Canto:</b> Seu canto é característico e repetido seguidamente durante alguns segundos. No folclore amazonense, diz-se que seus gritos prenunciam a chegada de forasteiros. Já na região do Espinhaço, em Minas Gerais, prenunciam a morte de um conhecido.</li>
+        </ol>
+    </div>
+
+        <div class="extras_info">
+            <h1>Área de Perguntas</h1>
+            <button class="info_popup" onclick="info_popup()">O que é Estridente?</button>
+            <button class="info_popup" onclick="info_popup2()">Mas o que é uma ave de Rapina?</button>
+        </div>
+    
+       <!--FOOTER-->
+       <footer class="footer">
+        <div class="container2">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>SOBRE</h4>
+                    <ul>
+                        <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMAÇÕES</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ensino</a></li>
+                        <li><a href="#">Extensão</a></li>
+                        <li><a href="#">Pesquisa e Pós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTATE-NOS</h4>
+                    <ul>
+                        <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                        <li><p>-Telefone: (37) 3431-4900</p></li>
+                        <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+    <script src="index.js"></script>
+    </html>

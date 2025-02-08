@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Corrupião</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Corrupião</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/corrupiao/corrupiao1.webp" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/corrupiao/corrupiao2.webp" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/corrupiao/corrupiao3.jpg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/corrupiao/corrupiao4.jpg" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/corrupiao/corrupiao5.jpg" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/corrupiao/corrupiao6.webp" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Icterus jamacaii</i> <br>(Gmelin, 1788)</li>
+            <li><b>Nomes Populares:</b> sofreu (Ceará), concriz (Pernambuco e Rio Grande do Norte), e sofrê no sertão nordestino.<li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/corrupiao_som.mp4"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Passeriformes</li>
+            <li><b>Família:</b> Icteriade</li>
+            <li><b>Espécie:</b> I. jamacaii</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico</li>
+            <li><b>Insetos e Aranhas:</b> O corrupião se alimenta de uma variedade de insetos e aranhas, o que fornece uma fonte importante de proteínas.</li>
+            <li><b>Frutas e Sementes:</b> Diversas frutas e sementes fazem parte da dieta do corrupião, incluindo cocos maduros de buriti.</li>
+            <li><b>Legumes e verduras:</b> O corrupião também consome legumes e verduras.</li>
+            <li><b>Néctar de Flores:</b> O corrupião é conhecido por consumir o néctar de várias flores, incluindo o ipê-amarelo e o mulungu. Curiosamente, acredita-se que o consumo dessas flores influencia a coloração da plumagem do corrupião.</li>
+            <li><b>Lagartos e ovos de outros pássaros:</b> Em algumas ocasiões, o corrupião pode se alimentar de lagartos e ovos de outras espécies de pássaros.</li>
+            <div class="sub-imgs">
+                <img src="imgs/aves/corrupiao/corrupiao-aliment.jpg" alt="alimentando_corrupiao"><p>Corrupião se Alimentando.</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica e Coloração</h4><br></li>
+            <li><b>Tamanho:</b> Mede entre 23 e 26 centímetros de comprimento.</li>
+            <li><b>Peso:</b> O macho tem peso médio de 67,3 gramas e a fêmea de 58,5 gramas.</li>
+            <li><b>Coloração</b></li>
+            <li>Coloração geral alaranjada e preta. Apresenta capuz preto, dorso e asas pretas. As asas apresentam visível mancha branca nas rêmiges secundárias.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento</h4><br></li>
+            <li>O corrupião vive em pares, não costuma acompanhar bandos mistos de aves. Podem se postar de modo estranho quando cantam, ficando de cabeça para baixo, esticando o pescoço para cima ou eriçando as penas.</li>
+            <li>Pode ser agressivo com possíveis predadores e territorialista.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Distribuição no Território Nacional</h4><br></li>
+            <li>Endêmico do Brasil, o corrupião ocorre nos estados do Nordeste, Centro-Oeste e Sudeste do País, além do leste do Pará, Goiás e Tocantins. Comum em áreas de Caatinga e zonas secas abertas, também habita bordas de florestas e clareiras, onde vive aos pares.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência</b></li>
+                <img src="imgs/aves/corrupiao/mapa-corrupiao.png" alt="mapa-corrupiao">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Reprodução</h4><br></li>
+            <li>Reproduz entre a primavera e verão, atinge a maturidade sexual de 18 a 24 meses. Pode construir seu próprio ninho, mas costuma ocupar ninhos de outras espécies para procriar (ex.: bem-te-vi e joão-de-barro), cada ninhada geralmente tem entre 2 e 3 ovos, e 14 dias de incubação.</li>
+        </ol>
+    </div>
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

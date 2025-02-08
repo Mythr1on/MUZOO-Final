@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Coruja-buraqueira</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Coruja Buraqueira</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/coruja/coruja1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/coruja/coruja2.webp" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/coruja/coruja3.jpg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/coruja/coruja4.jpg" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/coruja/coruja5.jpg" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/coruja/coruja6.jpg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Athene cunicularia</i> <br> (Molina, 1782)</li>
+            <li><b>Nomes Populares:</b> Também conhecida pelos nomes de caburé, caburé-de-cupim, caburé-do-campo, coruja-barata, coruja-do-campo, coruja-mineira, corujinha-buraqueira, corujinha-do-buraco, corujinha-do-campo, guedé, urucuera, urucureia, urucuriá, coruja-cupinzeira (algumas cidades de Goiás) e capotinha.<li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/coruja_som.mp3"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Strigiformes</li>
+            <li><b>Família:</b> Strigidae</li>
+            <li><b>Espécie:</b> A. cunicularia</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico.</li>
+            <li>A Coruja Buraqueira é uma predadora de pequeno porte com hábito carnívoro-insetívoro. Ela é considerada generalista, pois consome as presas mais abundantes de acordo com a estação. Aqui estão alguns exemplos dos principais tipos de alimentos que a Coruja Buraqueira ingere:</li>
+            <li><b>Pequenos Roedores:</b> A Coruja Buraqueira tem uma preferência por roedores, o que a torna muito útil para o controle de pragas.</li>
+            <li><b>Insetos:</b> Ela consome várias ordens de insetos, incluindo coleópteros (besouros), ortóptera (grilos e gafanhotos), díptera e himenóptera.</li>
+            <li><b>Répteis e Anfíbios:</b> A dieta da Coruja Buraqueira também inclui pequenos répteis e anfíbios.</li>
+            <li><b>Pequenos Pássaros:</b> Espécies como pardais também fazem parte da dieta desta coruja.</li>
+            <li><b>Escorpiões:</b> A Coruja Buraqueira também se alimenta de escorpiões.</li>
+            <div class="sub-imgs">
+                <img src="imgs/aves/coruja/aliment-coruj.jpg" alt="coruja_alimentando"><p>Coruja Buraqueira se Alimentando.</p>
+            </div>
+            <li>Embora possa caçar a qualquer hora do dia, a Coruja Buraqueira prefere o entardecer e o amanhecer, ou seja, o crepúsculo. Isso mostra o quão adaptável e versátil essa espécie é em termos de alimentação</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica e Coloração</h4><br></li>
+            <li></li><b>Tamanho e Dimensões</b></li>
+            <li>A Coruja-buraqueira é uma ave de pequeno porte. O tamanho médio dos machos é de 21,5 a 28,5 cm e das fêmeas é de 22 a 25 cm. <br>O peso varia entre 110 e 285 g para os machos e entre 150 a 265 g para as fêmeas. <br>Ela possui a cabeça redonda, sem penachos e os olhos estão dispostos lado a lado, num mesmo plano. <br>Ao contrário da maioria das corujas, o macho é ligeiramente maior que a fêmea.</li>
+            <li><b>Coloração</b></li>
+            <li>A coloração da Coruja-buraqueira é terrosa, mimética, podendo apresentar plumagem em tons de ferrugem causada por solos de terra roxa. <br> As sobrancelhas são brancas e os olhos são amarelos. <br> As fêmeas são normalmente mais escuras que os machos, principalmente na face. <br> O adulto possui um tom de cor forte, tem o peito e a barriga com coloração parda, traços cor de terra, variações de marrom, que lembram manchas e barras. <br> O jovem é similar na aparência, mas é gorduchinho, desengonçado, com as penas descabeladas e coloração leve. Seu peito é totalmente branco, sem as variações marrons.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento Geral e Sobrevivência</h4><br></li>
+            <li><b>Comportamento Geral:</b> A coruja-buraqueira é conhecida por seu comportamento de viver em buracos no chão. Ela é uma ave principalmente noturna, mas também pode ser vista durante o dia. Ela é solitária, mas às vezes pode ser vista em pequenos grupos.</li>
+            <li><b>Estratégia de Caça:<b> A coruja-buraqueira é um predador eficaz. Ela usa sua audição aguçada e visão noturna para localizar suas presas. Sua dieta consiste principalmente de pequenos roedores, insetos e outros pequenos animais. Ela caça à noite, voando baixo sobre o chão para surpreender suas presas.</li>
+            <li><b>Estratégia de Defesa e Sobrevivência:</b> A coruja-buraqueira usa várias estratégias de defesa e sobrevivência. Uma de suas principais estratégias de defesa é seu comportamento de viver em buracos no chão. Isso a protege de muitos predadores. Além disso, sua coloração de penas ajuda a camuflá-la em seu ambiente, tornando-a difícil de ser vista por predadores e presas.</li>
+            <li>Além disso, em situações de estresse, como escassez de alimento, agressão física por interações agonísticas ou desastres naturais, pode-se observar um aumento na prática do infanticídio.</li>
+            <li><b>Principais Predadores da espécie:</b> Os principais predadores são: serpentes, gavião-caracará, cachorro-do-mato, gato-do-mato e entre outros.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência</h4><br></li>
+            <li><b>Biomas de Ocorrência</b></li>
+            <li><b>Mata Atlântica:</b> Este bioma abriga uma grande diversidade de espécies, incluindo a coruja-buraqueira.</li>
+            <li><b>Caatinga:</b> A coruja-buraqueira também pode ser encontrada neste bioma, que é caracterizado por sua vegetação espinhosa e semiárida.</li>
+            <li><b>Pampas Gaúchos:</b> Este bioma, localizado no sul do Brasil, também é um habitat para a coruja-buraqueira.</li>
+            <li><b>Cerrado:</b> A coruja-buraqueira também habita áreas de cerrado alterado, próximo às habitações.</li>
+            <li><b>Campos e Pastos:</b> A maioria das corujas-buraqueira nidifica nos biomas das pastagens.</li>
+            <li><b>Desertos e Florestas:</b> Alguns indivíduos nidificam em biomas do deserto e da floresta.</li>
+            <li><b>Distribuição no Território Nacional</b></li>
+            <li>A coruja-buraqueira ocorre em quase todo o Brasil. Sua presença é mais comum em campos, pastos ou áreas de cerrado alterado, próximo às habitações. Ela é adaptável e pode ser encontrada em uma variedade de habitats, incluindo áreas urbanas.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência</b></li>
+                <img src="imgs/aves/coruja/mapa-coruja.png" alt="mapa-coruja">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Aspectos Reprodutivos</h4><br></li>
+            <li><b>Tempo de Reprodução:</b> A estação de reprodução da coruja-buraqueira começa entre março ou abril.</li>
+            <li><b>Ninho:</b> A coruja-buraqueira faz seu ninho em buracos no solo, aproveitando antigas tocas de tatu ou de outros animais. O casal se reveza para alargar o buraco, cava uma galeria horizontal usando os pés e o bico e, por fim, forra a cavidade do ninho com capim seco. As covas têm entre 1,5 metro e 3 metros de profundidade, e entre 30 cm e 90 cm de largura.</li>
+            <li><b>Comportamento Monogâmico:</b> As corujas-buraqueiras são, normalmente, monógamas, mas ocasionalmente um macho terá duas companheiras.</li>
+        </ol>
+
+    </div>
+       <!--FOOTER-->
+       <footer class="footer">
+        <div class="container2">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>SOBRE</h4>
+                    <ul>
+                        <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMAÇÕES</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ensino</a></li>
+                        <li><a href="#">Extensão</a></li>
+                        <li><a href="#">Pesquisa e Pós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTATE-NOS</h4>
+                    <ul>
+                        <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                        <li><p>-Telefone: (37) 3431-4900</p></li>
+                        <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

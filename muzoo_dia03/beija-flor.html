@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Beija-flor-tesoura</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <div class="container-an">
+        <h2 class="animal-title">Beija-Flor Tesoura</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/beija-flor/beija1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/beija-flor/beija2.webp" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/beija-flor/beija3.jpg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/beija-flor/beija4.webp" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/beija-flor/beija5.webp" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/beija-flor/beija6.jpeg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Eupetomena macroura</i><br>(Gmelin, 1788)</li>
+            <li><b>Nomes Populares:</b> colibri, pica-flor, cuitelo, chupa-flor, chupa-mel, binga, guanambi, guinumbi, guainumbi e guanumbi</li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/beija_flor_som.mp4"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Apodiformes</li>
+            <li><b>Família:</b> Trochilidae</li>
+            <li><b>Subfamília:</b> Trochilinae</li>
+            <li><b>Espécie:</b> E. macroura</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico</li>
+            <li><b>Néctar das flores:</b> Assim como outros beija-flores, o beija-flor-tesoura se alimenta principalmente do néctar que retira de flores. Ele desempenha um papel importante na polinização de muitas plantas.</li>
+            <li><b>Pequenos insetos:</b> Além do néctar, o beija-flor-tesoura também se alimenta de pequenos insetos. Ele caça esses insetos com grande habilidade em voos curtos.</li>
+            <li><b>Algumas aranhas:</b> O beija-flor-tesoura também é conhecido por se alimentar de algumas aranhas.</li>
+            <li>Esses hábitos alimentares permitem que o beija-flor-tesoura desempenhe um papel ecológico importante como polinizador de flores e plantas da natureza. Além disso, ele é um dos visitantes mais comuns de bebedouros de água com açúcar, em cidades ou em sítios.</li>
+            <div class="sub-imgs">
+                <img src="imgs/aves/beija-flor/beija_aliment.jpg" alt="beija_flor_se_alimentando"><p>Beija Flor Tesoura se Alimentando.</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica do Corpo</h4><br></li>
+            <li><b>Tamanho e Peso:</b> O beija-flor-tesoura mede entre 15 e 18 centímetros de comprimento, sendo um dos maiores beija-flores brasileiros. Ele pesa em torno de 6-11 gramas.</li>
+            <li><b>Cauda:</b> A característica mais notável do beija-flor-tesoura é a sua cauda longa e profundamente bifurcada, que toma quase 2/3 do seu tamanho total.</li>
+            <li><b>Cabeça e Pescoço:</b> A cabeça e o pescoço do beija-flor-tesoura são de um profundo azul violeta.</li>
+            <li><b>Plumagem:</b> O restante da plumagem é verde-escuro iridescente.</li> 
+            <li><b>Bico:</b> O bico do beija-flor-tesoura é ligeiramente curvado para baixo, preto e tem 2,2 centímetros de comprimento.</li> 
+            <li>As fêmeas são quase iguais aos machos, sendo um pouco menores e mais pálidas. Os indivíduos jovens são como as fêmeas, mas a cabeça é particularmente mais pálida e tingida de marrom.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Coloração e Camuflagem</h4><br></li>
+            <li><b>Cabeça, Pescoço e Cauda:</b> A cabeça, o pescoço e a cauda do beija-flor-tesoura são de um profundo azul violeta.</li>
+            <li><b>Resto do Corpo:</b> O restante da plumagem é verde-escuro iridescente.</li>
+            <li><b>Mancha Branca:</b> Ele possui uma pequena mancha branca atrás dos olhos.</li>
+            <li>Em relação à camuflagem, os beija-flores em geral, incluindo o beija-flor-tesoura, não são conhecidos por terem características de camuflagem específicas. No entanto, a coloração iridescente e brilhante de suas penas pode ajudar a confundir predadores em certas condições de luz. Além disso, as fêmeas geralmente possuem cores mais discretas, o que pode ajudar na camuflagem quando estão no ninho cuidando dos filhotes.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento</h4><br></li>
+            <li><b>Comportamento geral:</b> O Beija-flor-tesoura é conhecido por seu comportamento audacioso. Ele é um dos maiores e mais briguentos beija-flores, sendo muito territorialista e extremamente agressivo, principalmente na época da reprodução, quando é capaz de atacar outros pássaros muito maiores e pequenos mamíferos. Ele não costuma ter medo de seres humanos, aproximando-se das pessoas para se alimentar nas garrafas com água e açúcar ou nas flores de seus jardins.</li>
+            <li><b>Estratégias de Caça:</b>  Assim como outros beija-flores, o Beija-flor-tesoura se alimenta basicamente de néctar de flores, mas também caça pequenos insetos com grande habilidade em voos curtos. Ele tem um papel importante na polinização de muitas plantas.</li>
+            <li><b>Defesa e Sobrevivência:</b> O Beija-flor-tesoura é muito territorialista e defende seu território com agressividade. Quando a alimentação é limitada, os jovens permanecem no ninho por até 35 dias. Durante a época de reprodução, o macho fica responsável por defender o território enquanto a fêmea realiza a incubação dos ovos por cerca de 16 dias.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência no Brasil</h4><br></li>
+            <li><b>Biomas de Ocorrência no Brasil</b> <br>O Beija-flor-tesoura pode ser encontrado em áreas semiabertas, bordas de florestas, savanas e campos. <br>
+            Ele é comumente encontrado em grandes regiões urbanizadas, além de viver em locais possuidores de áreas semiabertas, parques, jardins e bordas de florestas.
+            </li>
+            <li><b>Distribuição no Território Nacional</b><br> O Beija-flor-tesoura ocorre em quase todo o território brasileiro, com exceção de algumas regiões da Amazônia. <br> Ele está presente desde as Guianas até a Bolívia e o Paraguai. <br> No Brasil, ele é encontrado do norte, centro-oeste e sudeste, incluindo a Mata Atlântica de Minas Gerais e Espírito Santo. <br> Ele também é encontrado no nordeste do Brasil, incluindo o sul do Maranhão, Piauí e Ceará, bem como em Minas Gerais.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência no Brasil</b></li>
+                <img src="imgs/aves/beija-flor/mapa-beija.png" alt="mapa-beija">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Aspectos Reprodutivos</h4><br></li>
+            <li><b>Acasalamento:</b> Durante o período de acasalamento, o macho faz a corte pairando em frente à fêmea, que depois o acompanha nas manobras aéreas.</li>
+            <li><b>Ninho:</b> O ninho, que tem formato de tigela, é construído em galhos – sendo composto por musgos e líquens, aderidos com teias de aranha.</li>
+            <li><b>Incubação:</b>  As fêmeas da espécie realizam a incubação dos ovos por cerca de 16 dias.</li>
+            <li><b>Alimentação dos Filhotes:</b> Após o nascimento, a fêmea alimenta os filhotes principalmente com insetos.</li>
+            <li><b>Defesa do Território:</b> Enquanto a fêmea cuida dos filhotes, o macho fica responsável por defender o território.</li>
+            <li><b>Independência dos filhotes:</b>  Os filhotes do beija-flor-tesoura deixam o ninho em cerca de 24 dias.</li>
+        </ol>
+    </div>
+       <!--FOOTER-->
+       <footer class="footer">
+        <div class="container2">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>SOBRE</h4>
+                    <ul>
+                        <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMAÇÕES</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ensino</a></li>
+                        <li><a href="#">Extensão</a></li>
+                        <li><a href="#">Pesquisa e Pós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTATE-NOS</h4>
+                    <ul>
+                        <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                        <li><p>-Telefone: (37) 3431-4900</p></li>
+                        <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>

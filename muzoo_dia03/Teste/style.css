@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b5e20; /* Verde escuro */
+    color: #e8f5e9; /* Verde claro para contraste */
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* Usando Poppins para o título */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e56d1e; /* Verde claro para títulos */
+}
+
+button {
+    background-color: #2e7d32; /* Verde escuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#animal-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+#animal-img:hover {
+    transform: scale(1.05);
+}
+
+#curiosity {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #e8f5e9; /* Verde claro para contraste */
+    background-color: #2e7d32; /* Verde escuro */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perguntaadvinhar {
+    font-size: 1.1rem;
+    color: #a5d6a7; /* Verde claro para texto */
+    margin-top: 20px;
+    display: block;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #2e7d32; /* Verde escuro */
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 200px;
+    background-color: #e8f5e9; /* Verde claro para fundo do input */
+    color: #1b5e20; /* Verde escuro para texto do input */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #1b5e20; /* Verde mais escuro ao focar */
+    outline: none;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #ff6f60; /* Vermelho suave para feedback de erro */
+    font-weight: bold;
+}
+
+/* Efeitos de animação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #animal-img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

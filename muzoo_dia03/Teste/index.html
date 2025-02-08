@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Curiosidades do Cerrado</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />.
+    <audio id="roulette-sound" src="plim.mp3"></audio>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #animal-img {
+            width: 300px;
+            height: 200px;
+        }
+
+        #curiosity {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Você os conheceu com mais detalhes pelo nosso site, agora...<br> Descubra o bicho do MUZOO!</h1>
+    <button onclick="generateCuriosity()">Gerar Curiosidade</button>
+    <div id="curiosity"></div>
+    <img id="animal-img" src="DESCUBRA O BICHO.png">
+    <div>
+        <label for="guess" class="perguntaadvinhar">Você pode dizer qual animal ele é?</label>
+        <input type="text" id="guess" />
+        <button onclick="checkGuess()">Enviar</button>
+    </div>
+    <div id="feedback"></div>
+    <script>
+        const animals = [
+            {
+                name: 'Lobo-Guará',
+                image: 'https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/02gambarini_779-24.jpg?w=1900&h=1269',
+                curiosity: 'É o maior canídeo da América do Sul e é conhecido por suas pernas longas.'
+            },
+            {
+                name: 'Tamanduá-Bandeira',
+                image: 'https://www.petz.com.br/blog/wp-content/uploads/2022/05/caracteristicas-do-tamandua-bandeira-topo.jpg',
+                curiosity: 'Esse gigante pode consumir até 30.000 formigas e cupins em um único dia.'
+            },
+            {
+                name: 'Tatu-Canastra',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrbAntTcrLFUX6PmgmO2zbb5QgevUuYzMkRw&s',
+                curiosity: 'É o maior tatu do mundo e pode cavar tocas extremamente rápidas.'
+            },
+            {
+                name: 'Seriema',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Seriema_%28Cariama_cristata%29.jpg',
+                curiosity: 'Pode possuir um grito alto e estridente que pode ser ouvido a grandes distâncias.'
+            },
+            {
+                name: 'Acauã',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/laughing-falcon-daric3a9n-panama-284844430821729.webp',
+                curiosity: 'É conhecido por sua capacidade de imitar sons do ambiente, incluindo o canto de outros pássaros e até sons mecânicos. Ele é um dos pássaros mais versáteis em termos de vocalização.'
+            },
+            {
+                name: 'Arara Canindé',
+                image: 'https://live.staticflickr.com/2268/2273155758_f3cf37c942_b.jpg',
+                curiosity: ' Muitas espécies dessas estão ameaçadas de extinção devido à perda de habitat e ao tráfico ilegal. A conservação é crucial para garantir sua sobrevivência a longo prazo.'
+            },
+            {
+                name: 'Beija-flor-tesoura',
+                image: 'https://www.google.com/imgres?q=beija%20flor%20tesoura%20verde&imgurl=https%3A%2F%2Fs3.animalia.bio%2Fanimals%2Fphotos%2Ffull%2Foriginal%2F2422px-fork-tailed-woodnymph-28thalurania-furcata29-male.webp&imgrefurl=https%3A%2F%2Fanimalia.bio%2Fpt%2Ffork-tailed-woodnymph&docid=A0BzXh4ihsDp_M&tbnid=CsF4jedryg1eKM&vet=12ahUKEwiixZSIuK2LAxW7rZUCHY8UFgkQM3oECGQQAA..i&w=1419&h=1200&hcb=2&ved=2ahUKEwiixZSIuK2LAxW7rZUCHY8UFgkQM3oECGQQAA',
+                curiosity: 'Tem um bico extremamente longo e fino, que ele usa para extrair néctar de flores com longos tubos. Essa é uma das poucas espécies desse animal que migra, passando o inverno em regiões mais quentes.'
+            },
+            {
+                name: 'Bem-te-vi',
+                image: 'https://media.istockphoto.com/id/513418597/pt/foto/p%C3%A1ssaro-bem-te-vi-em-repouso-e-atenta.jpg?s=612x612&w=0&k=20&c=5S5g0I-CAMfB7eQNJVTAdf11z6A4FYlfP2Doo7wZrwo=',
+                curiosity: 'Ele é monogâmico e vive com o mesmo par para toda a vida.'
+            },
+            {
+                name: 'Biguá',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Bigu%C3%A1_%28Phalacrocorax_brasilianus%29.JPG',
+                curiosity: 'Um dos maiores pássaros aquáticos da América do Sul, conhecido por sua capacidade de mergulhar profundamente na água em busca de peixes.'
+            },
+            {
+                name: 'Canário-da-terra',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Saffron_Finch_%28Sicalis_flaveola%29_%285440647576%29_%28cropped%29.jpg',
+                curiosity: 'Os canários-da-terra são muito comuns em torneios de canto realizados entre criadores em todo o Brasil. Avaliados em três categorias de competição: a qualidade do canto; a capacidade de repetir intensamente um mesmo canto; e a capacidade de cantar diante de outro exemplar da espécie.'
+            },
+            {
+                name: 'Coleirinho',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Sporophila_caerulescens.jpg',
+                curiosity: 'O coleirinho pode ser conhecido com outros nomes. Alguns deles são: coleiro-zel-zel, papa-capim, papa-capim-de-coleira, papa-arroz, gola de cruz ou coleiro-tuí-tuí, papa-mineiro e gola.'
+            },
+            {
+                name: 'Corrupião',
+                image: 'https://live.staticflickr.com/1922/43598029360_10c6c2aa9a_b.jpg',
+                curiosity: 'Trata-se de uma das aves mais lindas e com a vocalização mais melodiosa deste continente.'
+            },
+            {
+                name: 'Coruja-Buraqueira',
+                image: 'https://live.staticflickr.com/4121/4817801105_8e09759a32_b.jpg',
+                curiosity: 'Fazem sons que são descritos como pancadas e gritos para espantar perigos. Os filhotes também emitem sons: quando perturbados, produzem um som que lembra o de uma cascavel, espantando assim os predadores.'
+            },
+            {
+                name: 'Curicaca',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/2560px-buff-necked-ibis-28theristicus-caudatus29-283175406936629.webp',
+                curiosity: 'Seu nome popular é onomatopaico, semelhante ao som do seu canto, composto de gritos fortes. Conhecida também como despertador (Pantanal).'
+            },
+            {
+                name: 'Garça-Boiadeira',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/westerm-cattle-egret-bubulcus-ibis-at-rietvlei-nature-reserve-gauteng-south-africa-1.webp',
+                curiosity: 'No período que antecede a reprodução, seus dormitórios são estabelecidos em árvores próximas a coleções de água(rios, lagos), muitas vezes o excesso de suas fezes ácidas pode causar danos temporários à vegetação.'
+            },
+            {
+                name: 'Jacurutu',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/great-horned-owl-eating-snake-harshaw-rd-patagonia-az-22-feb-2015-1.webp',
+                curiosity: 'Coruja grande e poderosa, com “orelhas” proeminentes. Maior rapinante noturno do Brasil, também conhecido como corujão, corujão-orelhudo e corujão-das-lagoas (Ceará).'
+            },
+            {
+                name: 'Maritaca',
+                image: 'https://www.ecoregistros.org/site/images/dataimages/2018/01/10/238651/IMG_6298--F.jpg',
+                curiosity: 'Ocorre em quase todo o Brasil, sendo encontrado desde em florestas até cidades. É uma ave adaptável a ambientes alterados pelo homem e em alguns locais pode ser considerada uma espécie sinantrópica.'
+            },
+            {
+                name: 'Pintassilgo-da-Venezuela',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Kapuzenzeisig_%28Carduelis_cucullata%29.JPG',
+                curiosity: 'Ocorre em praticamente em todo o Brasil, com exceção da Região Amazônica e Nordeste. Há uma população isolada no extremo norte (RR, Venezuela e Guianas).'
+            },
+            {
+                name: 'Pombão',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXUuGC2PqqyMUaANCLq9a4xAFfJ3-CUxY-A&s',
+                curiosity: 'Canto baixo, profundo e rouco, de três a quatro sílabas: “gu-gu-gúu”, “gú-gu-gúu”, sendo que o macho emite quatro repetições e a fêmea três.'
+            },
+            {
+                name: 'Quiriquiri',
+                image: 'https://live.staticflickr.com/2434/3752819339_80e516dc07_b.jpg',
+                curiosity: 'O macho é cinza azulado no alto da cabeça e asa, enquanto as costas e a cauda são marrom avermelhado, finamente estriadas de negro. A fêmea tem as costas e asas marrom avermelhada, com as estrias negras finas, sem o cinza azulado do dorso do macho ou a faixa negra subterminal na cauda.'
+            },
+            {
+                name: 'Rolinha',
+                image: 'https://live.staticflickr.com/3613/3493026194_4b3b09d804_b.jpg',
+                curiosity: 'Historicamente uma das primeiras espécies brasileiras a se adaptar ao meio urbano, ainda é a espécie nativa mais comum em boa parte das grandes cidades brasileiras.'
+            },
+            {
+                name: 'Sanhaço-cinzento',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6IhA2Q_MDecCRWXzzX4wXVcB-owsWF4mL4g&s',
+                curiosity: 'O casal de pássaros alimenta os filhotes, que deixam o ninho após 20 dias de idade.'
+            },
+            {
+                name: 'Suriri',
+                image: 'https://live.staticflickr.com/7194/6936988967_5df39ed07f_b.jpg',
+                curiosity: 'Muitos ninhos de passeriformes são atacados por predadores como ramphastídeos, mas os pais defendem o território do ninho, além de receberem auxílio de outras espécies de tiranídeos para espantar predadores.'
+            },
+            {
+                name: 'Tucano-açu',
+                image: 'https://live.staticflickr.com/8687/28799484646_19194c60df_z.jpg',
+                curiosity: 'Em certas ocasiões podem se alimentar de pequenos macacos, mas também costuma saquear ninhos de outras aves exemplos bem te vi. anu branco. e devorar ovos e filhotes.'
+            },
+            {
+                name: 'Urubu-preto',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/1200px-black-vulturebdt7954jpg.webp',
+                curiosity: 'Dentre os urubus, é o de menor envergadura. Apesar de seu tamanho, é o mais agressivo dos urubus menores, disputando avidamente uma carcaça com as outras espécies.'
+            },
+            {
+                name: 'Cachorro do Mato',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwZeasSaZs4TQXNTymLFqr_0Z2kHup9sJIzg&s',
+                curiosity: 'Esses canídeos são muito sociais e costumam viver em grupos familiares, cooperando na caça e no cuidado dos filhotes.'
+            },
+            {
+                name: 'Camundongo',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/1619px-mus-musculus-2254jpg.webp',
+                curiosity: 'Essa é uma espécie de hábito noturno, essencialmente terrestre. Além disso, esse camundongo gosta de escalar. Ele é encontrado nas matas nativas, alimentando-se de frutas, grãos e folhas.'
+            },
+            {
+                name: 'Capivara',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAyJ4tXabCV-najJdt4Yq5zFkqy1SoIyfEg&s',
+                curiosity: 'As capivaras são consideradas mansas, porém, elas podem morder quando se sentem ameaçadas. A recomendação é a mesma para qualquer animal silvestre: ao encontrá-lo, evite contato.'
+            },
+            {
+                name: 'Cateto',
+                image: 'https://live.staticflickr.com/375/31453580472_1bdd074790_b.jpg',
+                curiosity: 'Eles não reagem bem à convivência ou à proximidade com o ser humano, além de ser territorialista. Por isso podem ser perigosos quando ameaçados.'
+            },
+            {
+                name: 'Furão-pequeno',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_-sQrMWD4Q3Tfl9fS157GH5XbsefdJZ-ew&s',
+                curiosity: ' Têm o corpo bastante alongado com pernas curtas. São animais extremamente ágeis e rápidos, com grande capacidade para escalar e nadar.'
+            },
+            {
+                name: 'Gambá-de-orelha-branca',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/didelphis-albiventris-28lund2c-184029-28345247705729.webp',
+                curiosity: 'As fêmeas de Gambá-de-orelha-branca apresentam marsúpio (bolsa) com a abertura voltada para a extremidade anterior.'
+            },
+            {
+                name: 'Irara',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Eira_barbara_99058175.jpg',
+                curiosity: 'As principais ameaças à espécie são a degradação e fragmentação ambiental, incluindo o desmatamento e queimadas, a caça por retaliação a eventuais ataques a criações e atropelamentos.'
+            },
+            {
+                name: 'Jaguatirica',
+                image: 'https://live.staticflickr.com/2373/2521898117_301a4ffa69_b.jpg',
+                curiosity: 'O lobo-guará é o maior canídeo da América do Sul e é conhecido por suas pernas longas.'
+            },
+            {
+                name: 'Jaratataca',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/2560px-zorrillo.webp',
+                curiosity: 'Suas manchas e listras ajudam a camuflá-las no ambiente, permitindo que se escondam facilmente entre a vegetação'
+            },
+            {
+                name: 'Lontra',
+                image: 'https://live.staticflickr.com/754/20637120066_5d828165d2_b.jpg',
+                curiosity: 'As lontras possuem adaptações morfológicas a vida semiaquática como membranas interdigitais nas patas, cauda achatada e musculosa bem como corpo alongado e patas curtas.'
+            },
+            {
+                name: 'Paca',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/lowland-paca-5515.webp',
+                curiosity: 'Constroem tocas ou buracos em barrancos, sempre com saídas de emergência cobertas por folhas.'
+            },
+            {
+                name: 'Porquinho-da-índia',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5iryI865kFmweIpN4DxxfcpKYu1bIDJ-t7A&s',
+                curiosity: 'Exótica, originária da América Central e introduzida como animal doméstico no Estado.'
+            },
+            {
+                name: 'Quati',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Nasua_nasua.jpg',
+                curiosity: 'Além de sua alimentação comum, quando há abundância de alimentos de origem antrópica (lixeiras e comedouros) podem passar a se alimentar principalmente disso.'
+            },
+            {
+                name: 'Sagui-de-tufos-pretos/mico-estrela',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2gBD2Cs-0hHu_WHHn5F5NnVjjn56BSElTQ&s',
+                curiosity: 'Sua principal atividade social é a catação, que é retirada de parasitas entre os pelos e uma forma de estabelecer laços afetivos.'
+            },
+            {
+                name: 'Tamanduá-mirim',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vvZD0U88J9HZhsNwMYXyHWRDmb5OLkwuAw&s',
+                curiosity: 'Possuem cauda preênsil, adaptação para melhor deslocamento na copa das árvores. '
+            },
+            {
+                name: 'Tatu galinha',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Tatu_%28dasypus_novemcinctus%29%2C_Uruguay%2C_2020.jpg',
+                curiosity: 'Vivem em tocas que eles mesmos escavam, onde características estruturais da toca, como entrada e tamanho variam de espécie para espécie.'
+            },
+            {
+                name: 'Tatu peba',
+                image: 'https://live.staticflickr.com/4033/4237467605_230a6f9edb_b.jpg',
+                curiosity: ' Conhecido popularmente como Tatu-peludo, pois possui pelos e uma tonalidade amarelada em sua carapaça.'
+            },
+            {
+                name: 'Cobra Coral Falsa',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/e-aesculapii-28dyad-pattern29.webp',
+                curiosity: 'O tamanho do corpo das fêmeas ovíparas é uma característica importante por influenciar no tamanho e formato dos ovos.'
+            },
+            {
+                name: 'Jacaré-do-papo-amarelo',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/2560px-brazil-01594-broad-snouted-caiman-284899473947829.webp',
+                curiosity: 'São conhecidos por esse nome pois, durante a fase do acasalamento, estes animais ficam com área do papo amarelado. '
+            },
+            {
+                name: 'Teiú-Comum',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XulgWnjJsW3BhPmvbyVpc_0QeipIRalESg&s',
+                curiosity: 'Apresenta uma atividade sazonal bem demarcada, hibernando no período de abril até julho.'
+            },
+            {
+                name: 'Urutu',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/urutc3ba-cruzeiro-28bothrops-alternatus29.webp',
+                curiosity: 'A peçonha pode causar acidentes fatais ou mutiladores se não forem tratados corretamente com o soro antibotrópico.'
+            },
+            {
+                name: 'Tilápia-do-Nilo',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Oreo_nilo_071011-0507_F_jtg.jpg',
+                curiosity: 'É um peixe de origem africana em que os primeiros exemplares trazidos para o Brasil chegaram no ano de 1971, e se adaptaram muito bem ao nosso clima tropical, pois esta espécie desenvolve-se bem em águas quentes.'
+            },
+            {
+                name: 'Sapo-Cururu',
+                image: 'https://s3.animalia.bio/animals/photos/full/original/2560px-cane-toad-sapo-de-cac3b1a-28rhinella-marina29-281509270744129.webp',
+                curiosity: 'A bufotenina, um dos químicos excretados pelo sapo-cururu, é classificada como uma droga de classe 1 pelas leis australianas. Acredita-se que os efeitos da bufotenina são similares aos de um envenenamento suave, o efeito estimulante, que inclui leves alucinações, que duram menos de uma hora.'
+            }
+        ];
+
+        let currentAnimal = null;
+        let interval;
+
+        function generateCuriosity() {
+            document.getElementById('curiosity').innerText = "Gerando curiosidade...";
+            document.getElementById('animal-img').src = "";
+            document.getElementById('feedback').innerText = "";
+            document.getElementById('guess').value = "";
+
+            let counter = 0;
+            const animalImgElement = document.getElementById('animal-img');
+            const rouletteSound = document.getElementById('roulette-sound');
+
+            function loadImage(index) {
+                if (index < animals.length) {
+                    const img = new Image();
+                    img.src = animals[index].image;
+                    img.onload = () => {
+                        if (index === counter) {
+                            animalImgElement.src = img.src;
+                        }
+                        loadImage(index + 1);
+                    };
+                }
+            }
+
+            loadImage(0);
+
+            interval = setInterval(() => {
+                if (counter >= animals.length) counter = 0;
+                animalImgElement.src = animals[counter].image;
+                rouletteSound.play();
+                counter++;
+            }, 100);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                currentAnimal = animals[Math.floor(Math.random() * animals.length)];
+                document.getElementById('curiosity').innerText = currentAnimal.curiosity;
+                document.getElementById('animal-img').src = currentAnimal.image;
+            }, 5000); // 7 segundos
+        }
+
+        function checkGuess() {
+            const userGuess = document.getElementById('guess').value.trim().toLowerCase();
+            if (currentAnimal && userGuess === currentAnimal.name.toLowerCase()) {
+                document.getElementById('feedback').innerText = "Parabéns! Você acertou!";
+            } else {
+                document.getElementById('feedback').innerText = "Ops! Tente novamente.";
+            }
+        }
+    </script>
+</body>
+
+</html>

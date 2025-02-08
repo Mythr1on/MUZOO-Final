@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bioma Cerrado</title>
+</head>
+<body class="mf-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="biomas_animais.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+
+    <div class="container-an">
+        <h2 class="animal-title">Cerrado</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/biomas/cerrado/cerrado1.jpeg" alt="suiriri1">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/cerrado/cerrado2.jpg" alt="suiriri2">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/cerrado/cerrado3.jpg" alt="suiriri3">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/cerrado/cerrado4.jpeg" alt="suiriri4">
+                </div>
+                <div class="item">
+                    <img src="imgs/biomas/cerrado/cerrado5.jpeg" alt="suiriri5">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O BIOMA</h4>
+        <ol class="infos-animais">
+            <li><h4>Área Total do Bioma</h4> O Cerrado é um dos cinco grandes biomas do Brasil, cobrindo cerca de 25% do território nacional e perfazendo uma área entre 1,8 e 2 milhões de km² nos Estados de Goiás, Tocantins, Mato Grosso do Sul, sul do Mato Grosso, oeste de Minas Gerais, Distrito Federal, oeste da Bahia, sul do Maranhão, oeste do Piauí e porções do Estado de São Paulo. </li>
+            <div class="sub-imgs">
+                <img src="https://oncafari.org/wp-content/uploads/2019/05/mapa-cerrado.svg" alt="Área-cerrado">
+            </div>
+            <li><h4>Clima</h4></li>
+            <li>O clima predominante no Domínio do Cerrado é o <b>Tropical sazonal</b>, de inverno seco.</li>
+            <li><b>Temperatura média:</b> em torno de 22-23ºC, As máximas absolutas mensais não variam muito ao longo dos meses do ano, podendo chegar a mais de 40ºC.</li>
+            <li><b>Precipitação:</b> Assim como ocorre nos outros biomas do Brasil, a posição e extensão do Cerrado são determinadas pelo clima, que é do tipo tropical, com precipitação variando de 750 a 2000 mm por ano, em média, embora na maior parte da província ocorram chuvas entre 1100 e 1600 mm por ano.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Relevo</h4></li>
+            <li>O relevo do Domínio do Cerrado é em geral bastante plano ou suavemente ondulado, estendendo-se por imensos planaltos ou chapadões. Cerca de 50% de sua área situa-se em altitudes que ficam entre 300 e 600 m acima do nível do mar; apenas 5,5% vão além de 900m.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Hidrografia</h4></li>
+            <li>A localização central faz com que o Cerrado se situe sobre os grandes divisores de águas do país, abrigando as cabeceiras de suas maiores bacias hidrográficas. Ao sul, há nascentes de rios da bacia do Paraná; a Sudeste, do Paraguai; ao Norte, da bacia Amazônica; a Nordeste, do Parnaíba e a Leste, do São Francisco.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Vegetação</h4></li>
+            <li>O Cerrado é um bioma caracterizado por uma vegetação diversa, que mistura savanas, arbustos, árvores esparsas e gramíneas. Ele se adapta a um clima tropical com estação seca e solos pobres e ácidos. Suas plantas possuem adaptações, como raízes profundas, folhas pequenas e espessas, e resistência ao fogo, que é um fenômeno natural no bioma.
+
+                Espécies típicas incluem o pequi, a copaíba e o buriti. O Cerrado é essencial para a biodiversidade, regulação dos recursos hídricos e controle climático, além de ser o berço de várias bacias hidrográficas importantes. </li>
+            <div class="sub-imgs">
+                <img src="https://blog.stoodi.com.br/wp-content/uploads/2020/03/cerrado.jpg" alt="Vegetação Caatinga">
+                <p>Exemplo de Vegetação do Cerrado</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://vestibulares.estrategia.com/portal/wp-content/uploads/2023/05/image-23-1.jpg" alt="Vegetação Caatinga">
+                <p>Exemplo de Vegetação do Cerrado</p>
+            </div>
+            
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Fauna</h4></li>
+            <li>O Cerrado é um bioma com fauna diversa, adaptada ao clima seco e às variações de temperatura. Entre os principais grupos de animais, destacam-se: <br>
+                <b>Mamíferos:</b> O lobo-guará, o tamanduá-bandeira, a anta e pequenos mamíferos como o mico-estrela. <br>
+                <b>Aves:</b> Espécies como o curió, o joão-de-barro e o papagaio-do-cerrado. <br>
+                <b>Répteis:</b> A cobra-coral, o teiú e o cágado-de-barbicha. <br>
+                <b>Anfíbios: </b> O sapo-cururu e a rã-touro. <br>
+                <b>Invertebrados:</b> Diversas formigas, besouros e aranhas desempenham papéis ecológicos importantes. <br>
+                Esses animais possuem adaptações para sobreviver à seca e ao calor, como o uso de tocas e uma alimentação diversificada. No entanto, o bioma enfrenta ameaças como o desmatamento e a caça ilegal, colocando muitas espécies em risco. A conservação do Cerrado é essencial para preservar essa biodiversidade única.</li>
+            <div class="sub-imgs">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKc2nbp1coDWWPvCK5Rge0fzIRhEf3cxlKgY2_fLaqvxSr6bcZlUvmfgxs0XyvFPgauOWC5QXbWwtXqRhLribac5woQcYpVouaRi7yb5yYNTFEoZ0Boq5gYcXUlAfIIboDNYKz9BOsSKE/w1200-h630-p-k-no-nu/cagado+de+barbicha2.jpg" alt="Fauna Cerrado">
+                <p>Cágado-de-barbicha</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://s2-g1.glbimg.com/10v7-6CmrHn-UKPCodsAJCZl554=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/F/y/I1yPNFR8CwUiQhcxfLDA/incab-cerrado-credito-foto-christoffer-bangsgaard-web-1-.jpg" alt="fauna-cerrad2">
+                <p>Anta</p>
+            </div>
+            <div class="sub-imgs">
+                <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/02gambarini_779-24.jpg?w=1900&h=1269" alt="fn-cerrado3">
+                <p>Lobo-guará</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Visão Geral</h4></li>
+            <li>O Cerrado é um bioma característico do Brasil, com presença marcante nas regiões Centro-Oeste, Norte e partes do Nordeste e Sudeste. É uma vegetação tropical sazonal, com uma combinação de áreas de savana, campos e florestas abertas. O clima é marcado pela alternância entre estações secas e chuvosas. Suas plantas, como o ipê, a cagaita e o buriti, são adaptadas à aridez e aos incêndios naturais. O Cerrado é um dos biomas mais biodiversos do planeta, abrigando uma grande variedade de espécies de fauna e flora, muitas delas endêmicas. Apesar de sua importância ecológica, o Cerrado tem sido intensamente desmatado devido à expansão da agricultura e da pecuária.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4></li>
+           <li><b>Biodiversidade impressionante</b>: O Cerrado abriga cerca de 12.000 espécies de plantas, sendo 44% delas endêmicas (só existem nesse bioma). Além disso, é o lar de mais de 200 espécies de mamíferos, 800 de aves e uma grande variedade de répteis, anfíbios e insetos.</li>
+           <li><b>"Águas do Cerrado"</b>: Embora o Cerrado tenha um clima seco, ele é responsável por grande parte da água consumida no Brasil. O bioma abriga a origem de várias bacias hidrográficas importantes, como a do São Francisco, Tocantins, Paraná e a do Araguaia.</li>
+           <li><b>Adaptação ao fogo</b>: O Cerrado é um bioma adaptado ao fogo. Muitos de seus vegetais possuem cascas grossas ou têm raízes profundas que ajudam a regenerar rapidamente após incêndios, que ocorrem naturalmente na estação seca.</li>
+           <li><b>A fauna secreta</b>: O Cerrado é o habitat de muitos animais raros e pouco conhecidos, como o tamanduá-bandeira, o lobo-guará, o cervo-do-pantanal e a onça-pintada. Muitas dessas espécies estão ameaçadas de extinção devido à perda de habitat.</li>
+           <li><b>Solo ácido e rico em minerais</b>: O solo do Cerrado, chamado de "latossolo", é bastante ácido e pobre em nutrientes para a maioria das plantas, mas ainda assim sustenta uma vegetação única adaptada a essas condições. Algumas plantas, como o pequi e o cagaita, possuem frutos com alto valor nutritivo.</li>
+           <li><b>Importância agrícola</b>: O Cerrado é uma das maiores áreas agrícolas do Brasil. Com o uso de tecnologias como o plantio direto e a correção do solo, a região se tornou um dos maiores polos de produção de grãos, como soja, milho e arroz.</li>
+           <li><b>Vegetação variada</b>: O Cerrado não é uma "savana" uniforme, mas uma mistura de diferentes tipos de vegetação. Ele pode incluir desde campos com gramíneas, até florestas com árvores mais altas, como a *Caryocar brasiliense* (pequi).</li>
+           <li><b>Pequi, o "ouro" do Cerrado</b>: O pequi é um fruto típico do Cerrado, muito usado na culinária regional. Sua polpa amarela tem um sabor marcante e é rica em vitaminas. Além disso, as sementes são usadas para extração de óleo.</li>
+           <li><b>Cerrado, um bioma ameaçado</b>: Estima-se que mais de 50% do Cerrado tenha sido desmatado devido à expansão da agricultura, da pecuária e da urbanização. Isso coloca em risco a biodiversidade e o equilíbrio ecológico da região.</li>
+           <li><b>Os "cabeludinhos"</b>: Algumas plantas do Cerrado, como a *Myrciaria dubia* (cabeludinha), têm frutos que são ricos em vitamina C e antioxidantes, sendo altamente nutritivos e utilizados em produtos naturais e suplementos alimentares.</li>
+          </ol>
+    </div>
+
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Anfibios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <section class="header-anf">
+        <div class="text-box-anf">
+            <h1>Anfíbios</h1>
+            <p>"Mais colorido do que você pensa..."</p>
+        </div>
+    </section>
+
+   <!--INTRODUÇÃO-->
+    <section class="intro">
+        <div class="bg-area1">
+        <div class="faixa-texto">
+        <h1>MAS O QUE É UM ANFÍBIO?</h1>
+    </div>
+        <div class="area-info-textos">
+        <div class="caixa-texto">
+            <p>Anfíbios são um grupo fascinante de vertebrados que inclui sapos, rãs, salamandras e cecílias. Caracterizados por sua capacidade de viver tanto na água quanto em terra, os anfíbios têm uma vida dividida entre esses dois ambientes. Eles geralmente passam por um processo de metamorfose, começando a vida como larvas aquáticas, como girinos, e se transformando em adultos que podem respirar ar e muitas vezes desenvolver membros para a locomoção terrestre.</p>
+        </div>
+        <img src="imgs/anfibios/IMG_ANF1.png" alt="alt">
+        </div>
+    </div>
+    <div class="bg-area2">
+        <div class="area-info-textos">
+            <img src="imgs/anfibios/ANF_IMG2.png" alt="alt">
+            <div class="caixa-texto2">
+                <p>Esses animais possuem pele fina e permeável, que lhes permite respirar através da pele, além dos pulmões. Essa característica faz com que dependam de ambientes úmidos para evitar a desidratação. A reprodução dos anfíbios é igualmente diversificada e adaptável, muitas espécies depositam seus ovos na água, mas algumas desenvolveram métodos únicos para garantir a sobrevivência de sua prole.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="bg-area3">
+        <div class="faixa-texto">
+        <h1>EXEMPLAR PRESENTE NO MUZOO</h1>
+    </div>
+        <p id="info_qtd_p1">Até o momento o MUZOO conta com somente um exemplar da classe.</p>
+
+    <!--INFORMAÇÃO DO SAPO-->
+    <div class="bg-area-animais_ind">
+        <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    <div class="container1">
+        <h2 class="animal-title">Sapo-Cururu</h2>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/anfibios/sapo_cururu1.jpg" alt="cururu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/anfibios/sapo_cururu2.jpg" alt="cururu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/anfibios/sapo_cururu3.webp" alt="cururu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/anfibios/sapo_cururu5.webp" alt="cururu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/anfibios/sapo_cururu6.jpg" alt="cururu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/anfibios/sapo_cururu7.webp" alt="cururu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Cientifico:</b><i> Rhinella marina</i> <br>Fitzinger, 1826</li>
+            <li><b>Nome Popular:</b> Sapo-Cururu , Sapo-boi ou cururu</li>
+            <li><b>Tem Risco de Extinção?:</b> Atualmente, a espécie não está ameaçada de extinção, sendo classificada no estado de conservação pouco preocupante pela Lista Vermelha da IUCN.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/som_cururu.mp3"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biologica</h4><br><b>Dominio:</b> Eukaryota<br><b>Reino:</b> Animalia <br><b>Filo: 	</b>Chordata <br><b>Classe:</b> Amphibia <br><b>Ordem:</b> Anura <br><b>Família:</b> Bufonidae <br><b>Gênero:</b> Rhinella <br><b>Espécies:</b> R. marina</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Hábitos Alimentares</h4><br></li>
+            <li><b>Nutrição:</b> Heterotrófico</li>
+            <li><b>Dieta geral:</b> O sapo-cururu é um predador oportunista e tem uma dieta bastante diversificada, que inclui uma ampla gama de alimentos, tanto de origem animal quanto vegetal. Eles são conhecidos por comer qualquer coisa que consigam capturar e engolir, desde pequenos invertebrados até pequenos vertebrados.</li>
+            <li><b>Principais Tipos de Alimentos</b><br><b>Invertebrados:</b><br>Insetos: Besouros, formigas, grilos, gafanhotos, moscas e outros insetos são uma parte significativa da dieta do sapo-cururu.
+            <br>Minhocas: Estas são consumidas frequentemente, especialmente em ambientes úmidos onde estão facilmente disponíveis.
+            <br>Aranhas e centopeias: Eles também se alimentam de aranhas e centopeias que encontram no solo ou em ambientes com vegetação densa.</li>
+            <div class="sub-imgs">
+                <img src="imgs/anfibios/sapo-cururu-aliment.jpg" alt="sapo-cururu-predando-escorpiao"><p>Sapo Cururu predando Escorpião Amarelo</p>
+            </div>
+            <li><b>Vertebrados:</b><br>Pequenos roedores: Em algumas ocasiões, sapos-cururu podem capturar e comer pequenos roedores, como camundongos.
+            <br>Outros anfíbios: Eles também podem se alimentar de outros sapos menores ou mesmo de suas próprias crias em casos de escassez de alimentos.</li>
+            <li><b>Outros Alimentos:</b><br>Matéria vegetal e frutas: Embora não seja uma parte principal de sua dieta, o sapo-cururu pode ocasionalmente ingerir material vegetal ou frutas caídas, especialmente em ambientes onde os alimentos de origem animal são escassos. <br>Restos de comida humana: Em áreas urbanas, esses sapos podem ser encontrados alimentando-se de restos de alimentos humanos ou ração de animais de estimação.</li>
+            <li><b>Metodos de Alimentação:</b><br>Os sapos-cururu usam sua língua pegajosa para capturar presas, lançando-a rapidamente para prender o alimento e trazê-lo de volta à boca. Eles são mais ativos à noite (noturnos), momento em que saem à caça, aproveitando a escuridão para surpreender suas presas. Durante o dia, eles costumam se esconder em locais úmidos e sombreados para evitar predadores e a desidratação.</li>
+            <li><b>Impactos Ambientais:</b><br>Em regiões onde foram introduzidos, como na Austrália, os sapos-cururu têm causado problemas ecológicos significativos. Sua dieta variada e falta de predadores naturais nestes novos habitats permitem que eles se reproduzam rapidamente e competam com espécies nativas por alimentos, além de predarem diretamente algumas espécies nativas.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia básica do corpo</h4><br><b>Cabeça e boca:</b><br>A cabeça do sapo cururu é larga e achatada. <br>Possui uma boca grande com dentes pequenos e fracos no maxilar superior. <br>As glândulas parotóides são grandes e visíveis atrás dos olhos, secretando uma substância tóxica usada como defesa.</li>
+            <li><b>Olhos:</b><br>Os olhos são grandes, com pupilas horizontais.<br>Possuem uma membrana nictitante, que ajuda a proteger os olhos e mantê-los úmidos.</li>
+            <li><b>Corpo:</b><br>O corpo é robusto e verrucoso, com pele seca e rugosa.<br>A cor varia de marrom a cinza, com manchas escuras e claras que ajudam na camuflagem.</li>
+            <li><b>Membros:</b><br>As patas traseiras são longas e musculosas, adequadas para saltos curtos.<br>As patas dianteiras são mais curtas, usadas para apoio e movimento no solo.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Tamanho Médio e Dimensões Gerais</h4><br><b>Comprimento:</b><br>Os sapos cururu adultos geralmente medem entre 10 a 15 centímetros de comprimento, do focinho até a cloaca.<br>Alguns indivíduos podem alcançar até 24 centímetros em condições ideais.</li>
+            <li><b>Peso:</b><br>O peso varia significativamente com a idade e o sexo, mas os adultos podem pesar entre 200 gramas a mais de 1 kg. Os maiores espécimes podem pesar até 2 kg.</li>
+            <li><b>Dimorfismo Sexual:</b><br>Os machos são geralmente menores que as fêmeas. As fêmeas não só são maiores em comprimento, mas também mais volumosas.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Aspectos Relacionados a Camuflagem</h4><br></li>
+            <li><b>Coloração:</b><br>A coloração do sapo cururu varia, mas geralmente inclui tons de marrom, verde-oliva, cinza e bege. Essa coloração é crucial para sua camuflagem. Especificamente: <br><b>Marrom e verde-oliva:</b> Essas cores ajudam o sapo a se misturar com a folhagem, solo e vegetação úmida das florestas e áreas pantanosas. <br><b>Cinza e Bege:</b> Essas tonalidades são eficazes em terrenos mais secos e arenosos, onde o sapo pode se esconder entre folhas secas e detritos.</li>
+            <div class="sub-imgs">
+            <img src="imgs/anfibios/cururu-amarelo.JPG" alt="cururu-amerelo"><p>Cururu-Amarelo</p>
+            <img src="imgs/anfibios/sapo_cururu1.jpg" alt="cururu-marrom"><p>Cururu-Marrom</p>
+            </div>
+            <li><b>Textura da pele:</b><br>A pele do sapo cururu possui uma textura rugosa, com glândulas que podem parecer verrugas. Essa textura, combinada com a coloração, ajuda o sapo a se assemelhar a elementos do seu habitat, como pedras, troncos e folhas, aumentando sua capacidade de se esconder de predadores.</li>
+            <li><b>Comportamento de Camuflagem</b></li>
+            <li><b>Imobilidade:</b> Quando ameaçado, o sapo cururu tende a ficar imóvel, confiando em sua coloração e textura da pele para se esconder. Esse comportamento reduz a detecção por predadores que caçam visualmente.</li>
+            <li><b>Escolha do Habitat:</b> Esses sapos escolhem habitats que complementam sua coloração natural, como áreas com muita folhagem, solo úmido e ambientes sombreados.</li>
+            <li><b>Mimetismo e Aposematismo:</b><br>Embora o sapo cururu utilize principalmente a camuflagem para se esconder, ele também possui mecanismos de defesa aposemáticos. Suas glândulas parotoides, localizadas atrás dos olhos, secretam toxinas que podem desencorajar predadores. Esse tipo de defesa química é geralmente sinalizado por comportamentos ou características visuais que alertam os predadores sobre sua toxicidade potencial, embora no caso do sapo cururu, a coloração não seja um sinal aposemático óbvio.</li>
+            <li><b>Variação Geográfica:</b><br>A coloração do sapo cururu pode variar geograficamente, adaptando-se aos diferentes ambientes ao longo de sua distribuição. Em áreas mais úmidas e florestadas, eles tendem a ser mais escuros e verdes, enquanto em regiões mais secas, sua coloração pode ser mais clara.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento Geral</h4><br>Os sapos-cururus são principalmente noturnos, passando o dia escondidos em lugares úmidos e frescos para evitar a desidratação. À noite, saem para caçar e se reproduzir. São animais solitários, exceto durante a época de acasalamento, quando os machos vocalizam para atrair as fêmeas.</li>
+            <li><b>Estratégias de Caça:</b><br>Os sapos-cururus são predadores oportunistas e generalistas, alimentando-se de uma grande variedade de presas, incluindo insetos, pequenos mamíferos, aves, outros anfíbios, e até pequenos répteis. Eles utilizam a técnica de emboscada, permanecendo imóveis e esperando que a presa se aproxime para então capturá-la rapidamente com a língua pegajosa. Sua visão e olfato apurados ajudam na detecção das presas, mesmo no escuro.</li>
+            <li><b>Defesa</b></li>
+            <li><b>Glândulas Paratoides:</b> Localizadas atrás dos olhos, essas glândulas produzem uma toxina chamada bufotoxina, que é liberada quando o sapo se sente ameaçado. Essa toxina pode causar sérios problemas de saúde ou até a morte de predadores, incluindo animais de estimação e seres humanos que entram em contato com o veneno.</li>
+            <li><b>Reprodução</b></li>
+            <li>Durante a estação chuvosa, os sapos-cururus se reproduzem em corpos d'água temporários ou permanentes. As fêmeas podem depositar milhares de ovos de uma vez, aumentando as chances de sobrevivência da prole. Os girinos se desenvolvem rapidamente, o que é uma vantagem em ambientes onde os corpos d'água podem secar rapidamente.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Principais Predadores da Espécie</h4><br></li>
+            <li>Já que você já sabe quais são as presas do Sapo-Cururu está na hora de saber que o preda.</li>
+            <li><b>Cobras:</b> Algumas espécies de cobras, como a cobra preta (Pseudechis porphyriacus) na Austrália, desenvolveram resistência parcial ou total à bufotoxina, permitindo que se alimentem dos sapos-cururus sem sofrer efeitos adversos.</li>
+            <li><b>Aves:</b> Algumas aves, como as garças e os falcões, aprenderam a evitar as glândulas paratoides e a comer apenas partes menos tóxicas do sapo. Essas aves podem remover a pele e as glândulas antes de consumir a carne.</li>
+            <li><b>Mamíferos:</b> Certos mamíferos, como ratos e marsupiais, podem ocasionalmente predar sapos-cururus, especialmente indivíduos jovens que possuem menos toxinas. Algumas espécies de mamíferos desenvolveram comportamentos específicos para evitar o envenenamento, como comer apenas partes não tóxicas do sapo.</li>
+            <li><b>Outros Anfíbios:</b> Como já citado antes, os sapos-cururu podem cometer canibalismo.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Área de Ocorrência</h4><br></li>
+            <li><b>Amazônia:</b> A vasta floresta tropical amazônica oferece um habitat ideal para o sapo-cururu devido à sua alta umidade e diversidade de presas. Ele é encontrado em vários estados da Amazônia, incluindo Amazonas, Pará, Acre, Rondônia e Roraima.</li>
+            <li><b>Mata Atlântica:</b> Embora mais fragmentada, a Mata Atlântica também abriga populações de sapos-cururus, particularmente em áreas preservadas e regiões de transição entre florestas e áreas urbanas. Estados como Rio de Janeiro, São Paulo, Espírito Santo e Bahia têm registros da espécie.</li>
+            <li><b>Cerrado:</b> Este bioma de savana tropical é outro habitat onde o sapo-cururu pode ser encontrado. Ele está presente em estados como Goiás, Mato Grosso, Mato Grosso do Sul e Minas Gerais.</li>
+            <li><b>Pantanal:</b> No Pantanal, a maior planície inundável do mundo, localizada em Mato Grosso e Mato Grosso do Sul, o sapo-cururu é uma espécie comum, aproveitando os ambientes aquáticos e semi-aquáticos.</li>
+            <li><b>Caatinga:</b> O semiárido nordestino também abriga populações de sapo-cururu, que se adaptam bem às condições mais secas e à vegetação xerófila. Estados como Pernambuco, Ceará, Paraíba e Rio Grande do Norte têm presença da espécie.</li>
+            <li><b>Pampa:</b> Embora menos comum, ele pode ser encontrado em áreas do sul do Brasil, especialmente no Rio Grande do Sul, adaptando-se às condições de pradaria deste bioma.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência no Brasil</b></li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Distribution_map_of_Rhinella_schneideri.svg/240px-Distribution_map_of_Rhinella_schneideri.svg.png" alt="mapa-sapo-cururu">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Curiosidades</h4><br></li>
+            <li><b>Interações com humanos:</b> Em algumas culturas, o sapo cururu é considerado um símbolo de boa sorte ou até mesmo um talismã. No entanto, seu veneno pode representar um perigo para humanos e animais de estimação, e o contato direto com a pele ou ingestão acidental deve ser evitado.</li>
+            <li><b>Predador eficiente:</b> Além de ser um predador ativo, o sapo cururu também possui uma habilidade defensiva interessante. Quando ameaçado, ele pode inflar seu corpo, tornando-se maior e mais difícil de engolir para predadores. </li>
+            <li><b>Adaptação à salinidade:</b> Uma característica notável do sapo cururu é sua capacidade de tolerar água salobra e salgada. Isso permite que eles se estabeleçam em manguezais e outras áreas costeiras onde a água pode ser mais salina.</li>
+        </ol>
+    </div>
+</div>
+</div>  
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>

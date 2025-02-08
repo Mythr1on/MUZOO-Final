@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Jacurutu</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Maritaca</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/maritaca/maritaca1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/maritaca/maritaca2.jpg" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/maritaca/maritaca3.webp" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/maritaca/maritaca4.webp" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/maritaca/maritaca5.jpg" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/maritaca/maritaca6.jpg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Psittacara leucophthalmus</i> <br>(Statius Muller, 1776)</li>
+            <li><b>Nomes Populares:</b> Baetá, baetaca, baiatá, baitá, baitaca, curica, guaracininga, guaracinunga, humaitá, maetá, maetaca, maitá, mai-tá, maitaca, maritaca, cocota, puxicaraim, Loiro, suia e xia são designações comuns para diversas espécies de aves psitaciformes da família dos Psittacidaes do gênero Pionus.</li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/som_maritaca.mp3"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Psittaciformes</li>
+            <li><b>Família:</b> Psittacidae</li>
+            <li><b>Espécie:</b> P. leucophthalmus</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico.</li>
+            <li>O Psittacara leucophthalmus, possui uma dieta variada que inclui principalmente frutos e sementes. Eles também consomem flores, como as da quaresmeira (Tibouchina granulosa, Melastomataceae)1. Essas aves são frequentemente observadas procurando alimento tanto em copas de árvores altas quanto em arbustos frutíferos dentro de florestas e bordas de mata. Além disso, em áreas urbanas, eles também saem em busca de frutos e sementes.</li>
+            <li>Se adaptam facilmente a áreas urbanas e degradadas, desde que existam fontes de alimento e lugares para nidificação. Eles podem ser vistos em bandos de 5 a 40 indivíduos, tanto em zonas de bosques húmedos ou planícies quanto em centros urbanos. Em regiões agrícolas, a abundância de culturas fornece um suprimento constante de alimentos, favorecendo a permanência dessas aves na área.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica e Coloração</h4><br></li>
+            <li><b>Cabeça:</b> Forma Oval.</li>
+            <li><b>Coloração:</b> Predominantemente verde, com lados da cabeça e pescoço apresentando algumas penas vermelhas. As coberteiras inferiores pequenas da asa são vermelhas, enquanto as grandes inferiores são amarelas, destacando-se durante o voo.</li>
+            <li><b>Região Perioftálmica:</b> Nua e Branca.</li>
+            <li><b>Iris:</b> Laranja.</li>
+            <li><b>Bico:</b> Cor de chifre clara.</li>
+            <li><b>Pés:</b> Acinzentados.</li>
+            <li><b>Tamanho médio:</b>Entre 30 e 32 centímetros.</li>
+            <li><b>Peso:</b> Varia entre 140 e 171 gramas.</li>
+            <li>Os jovens da espécie têm uma coloração um pouco diferente dos adultos, com a ausência das penas vermelhas na cabeça e sob as asas, sendo de cor verde. Essas características ajudam a identificar a espécie e diferenciar indivíduos adultos dos mais jovens.</li>
+            <li>A predominância da cor verde em sua plumagem ajuda a ave a se misturar com a folhagem das árvores, o que é uma vantagem para se esconder de predadores e até mesmo para se aproximar de suas fontes de alimento sem ser facilmente notada1. A região perioftálmica nua e branca, bem como as penas vermelhas e amarelas, podem parecer chamativas, mas quando a ave está entre as folhas e flores, essas cores podem ajudar na camuflagem, confundindo predadores ou presas. Além disso, essas cores podem ter funções sociais, como na identificação de indivíduos e na comunicação entre membros da espécie.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência</h4><br></li>
+            <li>As Maritacas vivem em mata alta, pinheirais e matas ciliares. A espécie normalmente voa em bandos, podendo chegar até a 100 aves conjuntas. Apresenta hábitos diurnos, principalmente pela manhã</li>
+            <li>Apresenta ampla distribuição pela América do Sul a leste dos Andes, da Venezuela ao norte da Argentina e Uruguai. </li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência</b></li>
+                <img src="imgs/aves/maritaca/mapa_maritaca.png" alt="mapa-maritaca">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Reprodução</h4><br></li>
+            <li>Deposita seus ovos em troncos ocos e, às vezes, em grutas calcárias (Mato Grosso) e em paredões rochosos. A fêmea, encarregada da tarefa de chocar os ovos, é visitada e alimentada pelo macho na câmara incubatória.</li>
+        </ol>
+
+        </div>
+           <!--FOOTER-->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>SOBRE</h4>
+                    <ul>
+                        <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMAÇÕES</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ensino</a></li>
+                        <li><a href="#">Extensão</a></li>
+                        <li><a href="#">Pesquisa e Pós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTATE-NOS</h4>
+                    <ul>
+                        <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                        <li><p>-Telefone: (37) 3431-4900</p></li>
+                        <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aves Bem-Te-Vi</title>
+</head>
+<body class="an-body">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="index.html"><img src="imgs/Logo-removebg-preview.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <img src="imgs/Logo-removebg-preview.png" alt="logo" class="logo2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="registrar_visita.html">Registrar Visita</a></li>
+                    <li><a href="biomas_animais.html">Biomas</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <button class="btn-vltan"><a href="aves.html"><i class="fa-solid fa-left-long"></i>Voltar</a></button>
+
+    <!-- Caixa de acessibilidade -->
+    <div class="acessibilidade">
+        <h3>Ferramentas de Acessibilidade</h3>
+        <button class="btn-access" id="btnAumentarFonte">Aumentar Fonte</button>
+        <button class="btn-access" id="btnDiminuirFonte">Diminuir Fonte</button>
+        <button class="btn-access" id="btnInverterCores">Modo Escuro</button>
+        <button class="btn-access" id="btnLeitorTela" onclick="lerConteudo()">Leitor de Tela (melhor no Google Chrome)</button>
+        <button class="btn-access" id="btnPararLeitor" onclick="pararLeitura()">Parar Leitor</button>
+    </div>
+    
+    <div class="container-an">
+        <h2 class="animal-title">Bem-Te-Vi</h2>
+        <hr style="height: 3px; background-color: #000; margin-bottom: 20px;">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imgs/aves/bemtv/bem1.jpg" alt="urubu1">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bemtv/bem2.png" alt="urubu2">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bemtv/bem3.jpg" alt="urubu3">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bemtv/bem4.jpg" alt="urubu4">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bemtv/bem5.jpg" alt="urubu5">
+                </div>
+                <div class="item">
+                    <img src="imgs/aves/bemtv/bem6.jpg" alt="urubu6">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <script src="app-slider.js"></script>
+        <hr class="hr2">
+        <h4 class="info-ant">INFORMAÇÕES SOBRE O ANIMAL</h4>
+        <ol class="infos-animais">
+            <li><b>Nome Científico:</b> <i>Pitangus sulphuratus</i> <br> (Linnaeus, 1766)</li>
+            <li><b>Nomes Populares:</b> Para os indígenas: pituã, pitaguá ou puintaguá.</li>
+            <li>Atualmente a espécie não corre risco de extinção.</li>
+            <li><b>Som do Animal: </b> <br> <audio id="som_animal" controls src="soms/bemtv_som.mp3"></audio></li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Classificação Biológica</h4><br></li>
+            <li><b>Dominio:</b> Eukaryota</li>
+            <li><b>Reino:</b> Animalia</li>
+            <li><b>Filo:</b> Chordata</li>
+            <li><b>Classe</b> Aves</li>
+            <li><b>Ordem:</b> Passeriformes</li>
+            <li><b>Família:</b> Tyrannidae</li>
+            <li><b>Subfamília:</b> Trochilinae</li>
+            <li><b>Espécie:</b> P. sulphuratus</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Nutrição Geral e Hábitos Alimentares</h4><br></li>
+            <li><b>Tipo de Nutrição:</b> Heterotrófico</li>
+            <li><b>Insetos:</b> O bem-te-vi é insetívoro, podendo comer centenas de insetos em apenas um dia, como mosquitos, besouros e lagartas.</li>
+            <li><b>Frutas e sementes:</b> Ele também se alimenta de frutas e sementes, contribuindo para a dispersão de sementes em áreas de cerrado.</li>
+            <li><b>Peixes e crustáceos:</b> Em ambientes aquáticos, o bem-te-vi pode se alimentar de peixes e crustáceos.</li>
+            <li><b>Girinos:</b> Em lagos de menor profundidade, ele pode se alimentar de girinos.</li>
+            <li><b>Pequenos répteis e mamíferos:</b> O bem-te-vi também é conhecido por comer pequenos répteis, como lagartos e sapos, e pequenos mamíferos, como ratos e camundongos.</li>
+            <li><b>Ovos:</b> Ele também pode se alimentar de ovos.</li>
+            <li><b>Além disso, o bem-te-vi tem a habilidade de encontrar novas formas de alimento, chegando a se alimentar da ração de felinos domésticos, como gatos e cães. Ele também é um grande predador de abelhas, o que pode causar problemas para a apicultura.</b></li>
+            <div class="sub-imgs">
+                <img src="imgs/aves/bemtv/bemtv_aliment.jpg" alt="bem-te-vi_se_alimentando"><p>Bem-te-vi se Alimentando.</p>
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Morfologia Básica do Corpo</h4><br></li>
+            <li><b>Tamanho e Peso:</b> O bem-te-vi mede entre 22 a 25 centímetros de comprimento e pesa aproximadamente 52-68 gramas.</li>
+            <li><b>Corpo:</b> Tem o dorso pardo e a barriga de um amarelo vivo.</li>
+            <li><b>Cabeça:</b> Possui uma listra (sobrancelha) branca no alto da cabeça, acima dos olhos.</li>
+            <li><b>Cauda:</b> A cauda é preta.</li>
+            <li><b>Bico:</b> O bico é preto, achatado, longo, resistente e um pouco encurvado.</li>
+            <li><b>Garganta:</b> A garganta (zona logo abaixo do bico) é de cor branca.</li>
+            <li>Não há dimorfismo sexual nesta espécie, ou seja, tanto macho quanto fêmea têm as mesmas características físicas.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Aspectos relacionados a camuflagem</h4><br></li>
+            <li>O bem-te-vi (Pitangus sulphuratus) não é uma ave que depende fortemente de camuflagem, mas suas cores e padrões podem ajudar a se misturar em certos ambientes. Aqui estão alguns aspectos que podem contribuir para a camuflagem:</li>
+            <li><b>Cor do Corpo:</b> O dorso pardo do bem-te-vi pode ajudar a se misturar com o tronco das árvores e o solo, enquanto a barriga amarela pode se misturar com as folhas e frutas das árvores.</li>
+            <li><b>Cor da Cabeça:</b> A listra branca acima dos olhos (sobrancelha) pode ajudar a confundir predadores ou presas, quebrando a silhueta da cabeça da ave.</li>
+            <li><b>Cor da Cauda:</b> A cauda preta pode se misturar com sombras ou áreas escuras.</li>
+            <li>No entanto, é importante notar que o bem-te-vi é uma ave bastante visível e vocal, muitas vezes chamando a atenção para si mesma com seu canto alto e distintivo. Isso sugere que a camuflagem não é uma estratégia de sobrevivência primária para esta espécie. Em vez disso, o bem-te-vi pode confiar mais em sua agilidade e comportamento agressivo para evitar predadores.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Comportamento geral e Sobrevivência</h4><br></li>
+            <li><b>Comportamento Geral</b></li>
+            <li>O bem-te-vi é uma ave bastante ativa e curiosa.</li>
+            <li>Ele é muito territorialista e costuma defender seu território com muita garra.</li>
+            <li>É uma espécie bastante vocal, emitindo diversos sons diferentes para se comunicar com outros pássaros e também para alertar sobre possíveis perigos.</li>
+            <li>Ele pode ser encontrado tanto sozinho quanto em grupos de 2 a 4 bem-te-vis.</li>
+            <li><b>Estratégias de Caça</b></li>
+            <li>O bem-te-vi é conhecido por sua agilidade, o que lhe permite capturar insetos em pleno voo.</li>
+            <li>Ele também é um grande caçador de lagartas e outros insetos que podem prejudicar as plantas.</li>
+            <li>No litoral, ele captura pequenos crustáceos nas pedras.</li>
+            <li>No cerrado, ele consome cupins alados quando estes saem para a reprodução.</li>
+            <li><b>Estratégias de Defesa</b></li>
+            <li>O bem-te-vi é conhecido por seu comportamento agressivo contra possíveis ameaças, tais como gaviões, urubus e outros pássaros que invadem seu território.</li>
+            <li>Apesar de sua aparente fragilidade, o bem-te-vi não se intimida e ameaça vigorosamente outros pássaros maiores, como o gavião e o urubu.</li>
+            <li><b>Estratégias de Sobrevivência</b></li>
+            <li>O bem-te-vi é uma ave bastante adaptável, podendo viver tanto em áreas urbanas quanto em campos.</li>
+            <li>Ele tem uma alimentação bastante variada, o que lhe permite se adaptar a diferentes ambientes e fontes de alimento.</li>
+            <li>Sua capacidade de emitir diversos sons diferentes ajuda a comunicar-se com outros pássaros e alertar sobre possíveis perigos, contribuindo para sua sobrevivência.</li>
+            <li>Além disso, o bem-te-vi é uma ave bastante visível e vocal, muitas vezes chamando a atenção para si mesma com seu canto alto e distintivo. Isso sugere que a camuflagem não é uma estratégia de sobrevivência primária para esta espécie. Em vez disso, o bem-te-vi pode confiar mais em sua agilidade e comportamento agressivo para evitar predadores.</li>
+            <li><b>Predadores da Espécie</b></li>
+            <li>Os principais predadores do Bem-Te-Vi são Serpentes e Aves de Rapina.</li>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Ocorrência no Brasil</h4><br></li>
+            <li><b>Biomas de Ocorrência no Brasil</b></li>
+            <li>O Bem-te-vi é uma ave típica do bioma Cerrado brasileiro, mas sua presença é notada em quase todos os biomas do país. O Brasil possui seis grandes biomas terrestres: Amazônia, Caatinga, Cerrado, Mata Atlântica, Pampa e Pantanal.</li>
+            <li><b>Distribuição no Território Nacional</b></li>
+            <li>A distribuição geográfica do Bem-te-vi se estende predominantemente do sul do México à Argentina, uma área estimada em 16.000.000 quilômetros quadrados. No Brasil, ele é encontrado em todo o território.</li>
+            <div class="mapa-ocorr">
+                <li><b>Mapa de Ocorrência no Brasil</b></li>
+                <img src="imgs/aves/bemtv/mapa-bemtv.png" alt="mapa-bem-te-vi">
+            </div>
+            <hr style="height: 3px; background-color: #000;">
+            <li><h4>Aspectos Reprodutivos</h4><br></li>
+            <li><b>Ninho:</b> O ninho do Bem-te-vi é esférico e feito a partir de pequenas ramas, capim, restos de papel, fios e plástico. O casal constrói um ninho redondo com cerca de 25 cm de diâmetro. Geralmente escolhem árvores altas e sem folhas, cavidades nos postes de energia elétrica ou telhados de barro para construir o ninho.</li>
+            <li><b>Ovos:</b> A fêmea do Bem-te-vi, também popularmente conhecida como siririca, pode botar de 2 a 4 ovos durante o período reprodutivo.</li>
+            <li><b>Periodo reprodutivo:</b> O período reprodutivo do Bem-te-vi pode ser de julho a novembro. Em algumas fontes, é mencionado que a época da reprodução do Bem-te-vi é de agosto a dezembro.</li>
+            <li><b>Cuidado Parental:</b> Ambos os pais participam da incubação e cuidados com os filhotes.</li>
+        </ol>
+    </div>
+   <!--FOOTER-->
+   <footer class="footer">
+    <div class="container2">
+        <div class="row2">
+            <div class="footer-col">
+                <h4>SOBRE</h4>
+                <ul>
+                    <li><p>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu). </p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ensino</a></li>
+                    <li><a href="#">Extensão</a></li>
+                    <li><a href="#">Pesquisa e Pós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTATE-NOS</h4>
+                <ul>
+                    <li><p>-Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000</p></li>
+                    <li><p>-Telefone: (37) 3431-4900</p></li>
+                    <li><p>-Email: moodle.bambui@ifmg.edu.br</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>
