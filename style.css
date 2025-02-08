@@ -9,6 +9,7 @@
     margin-top: 3%;
     border-radius: 10px;
     margin-left: 40%;
+    margin-right: 3%;
 }
 #img-pqn{
     width: 80px;
@@ -36,7 +37,7 @@
 }
 @media(max-width: 900px){
     .btn-info-biomas{
-        margin-left: 30%;
+        margin-left: 31%;
         margin-top: 1%;
     }
 }
@@ -249,8 +250,8 @@ p {
 
 .logo img {
     width: 100px;
-    margin-bottom: -40px;
-    margin-top: -20px;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
 
 .menu img {
@@ -328,7 +329,7 @@ p {
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: #CD8A39;
+        background-color: #000000;
         transition: all 0.3s ease-in-out;
     }
 
@@ -896,7 +897,11 @@ p {
     background-size: cover;
     position: relative;
 }
-
+@media(max-width: 800px){
+    .header-pxs{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.356), rgba(4, 9, 30, 0.342)), url(imgs/banner-peixes-mobile.png);
+    }
+}
 .text-box-pxs {
     width: 90%;
     color: #fff;
@@ -915,6 +920,11 @@ p {
     background-position: center;
     background-size: cover;
     position: relative;
+}
+@media(max-width: 800px){
+    .header-anf{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.26), rgba(4, 9, 30, 0.356)), url(imgs/banner-anfibios-mobile.png);
+    }
 }
 .header-jogos {
     min-height: 100vh;
@@ -1311,7 +1321,11 @@ button:hover {
     background-size: cover;
     position: relative;
 }
-
+@media(max-width: 800px){
+    .header-rpts{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.356), rgba(4, 9, 30, 0.342)), url(imgs/banner-repteis-mobile.png);
+    }
+}
 /*PAGINA DAS AVES */
 .header-avs {
     min-height: 100vh;
@@ -1321,7 +1335,11 @@ button:hover {
     background-size: cover;
     position: relative;
 }
-
+@media(max-width: 800px){
+    .header-avs{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.356), rgba(4, 9, 30, 0.342)), url(imgs/banner_aves-mobile.png);
+    }
+}
 .text-box-avs {
     width: 90%;
     color: #fff;
@@ -1358,7 +1376,11 @@ button:hover {
     background-size: cover;
     position: relative;
 }
-
+@media(max-width: 800px){
+    .header-mfs{
+        background-image: linear-gradient(rgba(4, 9, 30, 0.356), rgba(4, 9, 30, 0.342)), url(imgs/banner-mamiferos-mobile.png);
+    }
+}
 .text-box-mfs {
     width: 90%;
     color: #fff;
