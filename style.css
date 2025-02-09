@@ -637,7 +637,7 @@ p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(4, 9, 30, 0)), url(imgs/MUZOO.png);
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: relative; 
 }
 @media(max-width: 900px){
     .header{
